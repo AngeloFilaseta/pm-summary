@@ -1,0 +1,28 @@
+%----------------------------------------------------------------------------------------
+%	INFORMATION ENVIRONMENT
+%----------------------------------------------------------------------------------------
+
+% Usage:
+% \begin{info}[optional title, defaults to "Info:"]
+% 	contents
+% 	\end{info}
+
+\mdfdefinestyle{info}{%
+	topline=false, bottomline=false,
+	leftline=false, rightline=false,
+	nobreak,
+	singleextra={%
+		\fill[black](P-|O)circle[radius=0.4em];
+		\node at(P-|O){\color{white}\scriptsize\bf i};
+		\draw[very thick](P-|O)++(0,-0.8em)--(O);%--(O-|P);
+	}
+}
+
+% Define a custom environment for information
+\newenvironment{info}[1][Info:]{ % Set the default title to "Info:"
+	\medskip
+	\begin{mdframed}[style=info]
+		\noindent{\textbf{#1}}
+}{
+	\end{mdframed}
+}

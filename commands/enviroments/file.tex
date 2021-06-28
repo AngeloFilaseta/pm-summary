@@ -1,0 +1,37 @@
+%----------------------------------------------------------------------------------------
+%	FILE CONTENTS ENVIRONMENT
+%----------------------------------------------------------------------------------------
+
+% Usage:
+% \begin{file}[optional filename, defaults to "File"]
+%	File contents, for example, with a listings environment
+% \end{file}
+
+\mdfdefinestyle{file}{
+	innertopmargin=1.6\baselineskip,
+	innerbottommargin=0.8\baselineskip,
+	topline=false, bottomline=false,
+	leftline=false, rightline=false,
+	leftmargin=2cm,
+	rightmargin=2cm,
+	singleextra={%
+		\draw[fill=black!10!white](P)++(0,-1.2em)rectangle(P-|O);
+		\node[anchor=north west]
+		at(P-|O){\ttfamily\mdfilename};
+		%
+		\def\l{3em}
+		\draw(O-|P)++(-\l,0)--++(\l,\l)--(P)--(P-|O)--(O)--cycle;
+		\draw(O-|P)++(-\l,0)--++(0,\l)--++(\l,0);
+	},
+	nobreak,
+}
+
+% Define a custom environment for file contents
+\newenvironment{file}[1][File]{ % Set the default filename to "File"
+	\medskip
+	\newcommand{\mdfilename}{#1}
+	\begin{mdframed}[style=file]
+}{
+	\end{mdframed}
+	\medskip
+}

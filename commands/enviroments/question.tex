@@ -1,0 +1,32 @@
+%----------------------------------------------------------------------------------------
+%	NUMBERED QUESTIONS ENVIRONMENT
+%----------------------------------------------------------------------------------------
+
+% Usage:
+% \begin{question}[optional title]
+%	Question contents
+% \end{question}
+
+\mdfdefinestyle{question}{
+	innertopmargin=1.2\baselineskip,
+	innerbottommargin=0.8\baselineskip,
+	roundcorner=5pt,
+	nobreak,
+	singleextra={%
+		\draw(P-|O)node[xshift=1em,anchor=west,fill=white,draw,rounded corners=5pt]{%
+		\questionTitle};
+	},
+}
+
+\newcounter{Question} % Stores the current question number that gets iterated with each new question
+
+% Define a custom environment for numbered questions
+\newenvironment{question}[1][\unskip]{
+	\bigskip
+	\stepcounter{Question}
+	\newcommand{\questionTitle}{~#1}
+	\begin{mdframed}[style=question]
+}{
+	\end{mdframed}
+	\medskip
+}
