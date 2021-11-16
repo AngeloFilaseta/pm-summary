@@ -1,4 +1,6 @@
-# How to Use
+# layangelo-latex
+
+## How to use
 To import the layout you need to:    
 1. Clone this repository.  
 2. Add the obtained folder to you LaTeX Project.  
@@ -6,13 +8,14 @@ To import the layout you need to:
 ```
 \input{layangelo-latex/layout}
 ```
-# Commands
 
-## Highliting
+## Commands
+
+### Highliting
 ``\hly{text}`` and ``\hlY{text}`` are the commands used to highlight.   
 Both use the stock yellow highlighter, but ``\hlY{text}`` is a bit darker.  
 
-## Enviroments
+### Enviroments
 #### File
 Usage:
 ```md
@@ -42,3 +45,18 @@ Usage:
 	Some Warning
 \end{warn}
 ```
+
+## License 
+This template originates from [LaTeXTemplates](http://www.LaTeXTemplates.com)
+#### Started from:
+__Lachaise Assignment__  
+Original Authors:
+
+- Marion Lachaise
+- François Févotte
+  
+Vel (vel@LaTeXTemplates.com)
+
+Changes from the original template are listed in the ```layout.tex``` file.
+
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
