@@ -1,0 +1,12 @@
+\newcommand{\centeredImage}[3] {
+    \begin{figure}[H]
+    	\begin{center}
+    		\includegraphics[width=#3\linewidth]{#1}
+    		\caption{#2}
+    	\end{center}
+    \end{figure}
+}
+
+\newcommand{\centeredBigImage}[2] {
+    \centeredImage{#1}{#2}{1}
+}

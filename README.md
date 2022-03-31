@@ -1,15 +1,9 @@
 # layangelo-latex
 
-## How to use
-To import the layout you need to:    
-1. Clone this repository.  
-2. Add the obtained folder to you LaTeX Project.  
-3. Insert in your main *.tex* the following line of code after your ``\documentclass{[...]}``:
-```
-\input{layangelo-latex/layout}
-```
-
 ## Commands
+
+### Images
+``\centeredImage{#1}{#2}{#3}`` is used to place and center an image. Place the image path as ``#1``, the caption as ``#2``, and a number between 0 and 1 in ``#3`` to specify the widht.
 
 ### Highliting
 ``\hly{text}`` and ``\hlY{text}`` are the commands used to highlight.   
