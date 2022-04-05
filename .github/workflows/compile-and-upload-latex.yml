@@ -14,6 +14,7 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: main.tex
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode --shell-escape
       - name: Rename file 
         run: mv main.pdf layangelo-latex.pdf
       - name: Release
