@@ -1,0 +1,27 @@
+\documentclass{article}
+% Import all the packages
+\input{imports}
+% Setup the layout of the document
+\input{layangelo-latex/layout}
+\addbibresource{document/bibliography.bib}
+
+\begin{document}
+
+% Print the title (first page)
+\input{document/title}
+
+\tableofcontents
+
+\newpage
+
+\listoffigures
+
+\newpage
+
+\input{document/content}
+
+\newpage
+
+\printbibliography
+
+\end{document}
