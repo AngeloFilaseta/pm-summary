@@ -228,8 +228,102 @@ Esistono diversi tipi di requisiti:
 \end{itemize}
 \subsubsection{Alternative a RBS}
 \paragraph{User Stories}
-Devono catturare gli elementi essenziali di un requisito
+Devono catturare gli elementi essenziali di un requisito. I requisiti diventano tutti delle descrizioni sotto forma di frasi. Esistono diversi template un esempio è "\textit{As a \textbf{role}, I want to \textbf{action}; (so that \textbf{benefit})}". In questo caso con \textbf{role} definiamo chi è il protagonista del requisito, con \textbf{action} definiamo cosa ci si aspetta dal sistema e con \textbf{benefit} definiamo perché è importante (ha business value? quanto?).
+
+Le user story non sono sufficienti, si fa fatica ad essere particolarmente espressivi, non si fornisce il contesto in modo chiaro e definito.
+Una buona pratica è mantenere le user story abbastanza separate ed indipendenti tra loro, in modo da poter distribuirle meglio sugli sprint e bilanciare anche meglio i rischi. In questo caso il problema si sposta più sulle dipendenze.
+Oltre alle user story possiamo definire anche:
+\begin{itemize}
+	\item \textbf{Epic}: Una user story particolarmente grande che necessita di più di uno sprint per essere completata. Può essere suddivisa in più user story;
+	\item \textbf{Theme/Feature}: Molte user story correlate tra loro
+\end{itemize}
+Su questi elementi però c'è ancora abbastanza dibattito.
+Quando si scrivono user story bisogna stare attenti a scriverle in modo che siano "interessanti". Importante è applicare dei criteri, valgono tutti i criteri che valgono anche in RBS. In più si possono utilizzare altri approcci, ad esempio l'improcio INVEST:
+\begin{itemize}
+	\item \textbf{Indipendent}: user story indipendenti sono più facili da pianificare;
+	\item \textbf{Negotiable}: dialogando col cliente si riesce ad arrivare ad un accordo senza dover partire con specifiche molto stringenti;
+	\item \textbf{Valuable}: Devono avere valore per il cliente (business value). Se una user story non ha business value è inutile;
+	\item \textbf{Estimable}: facilmente stimabile;
+	\item \textbf{Small}: abbastanza piccola per essere completata in un'iterazione. Nel caso in cui non lo siano abbastanza e non è possibile dividerle ulteriormente resta sempre possibile aumentare la durata dello sprint;
+	\item \textbf{Testable}: già visto anche in RBS, se non è possibile effettuare test specifici per la singola user story probabilmente esistono dipendenze nascoste o che non sono state calcolate.
+\end{itemize}
+\subparagraph{Role}
+Si tratta dell'utente che interagisce con sistema.
+
+\noindent Importante da definire per l'assegnazione dei ruoli. L'identificazione dell'utente è importante per definire quali azioni sono possibili per ogni classe di utenti. Il team NON è mai il protagonista delle User Story. I protagonisti delle user story sono sempre gli user. Anche in questo caso esiste dibattito su questo punto. L'importante è chiarire come usare gli strumenti e non utilizzarli in maniera non ben definita.
+\subparagraph{Actions}
+L'azione del sistema che effettua l'utente.
+
+\noindent Di solito si definisce una sola azione per user story. Un suggerimento è utilizzare sempre la forma attiva rispetto alla passiva. L'importante è rimanere consistenti, si può utilizzare anche la forma passiva, ma in tal caso essa va mantenuta per ogni user story. Il "sistema" è sempre il protagonista implicito della user story.
+\subparagraph{Benefits}
+Non necessariamente una user story corrisponde ad un solo beneficio. magari ci sono pochi benefici condivisi da più user story, o poche suer story che condividono più benefici comuni. Il beneficio non è necessariamente immediato per l'utente, può esserlo anche per altri stakeholders.
+
+\paragraph{My little world}
+Un esempio di dibattito su user story, feature, epic etc. è dato dal modello "my little world" di Marcel Britsch. Può essere utile sviluppare il concetto di \textit{Tema(Theme)} da immaginare come un obiettivo, una delle feautre principali del sistema da sviluppare, suddivisibile in diverse epiche che sono a loro volta suddivisibili in user story. Possibile anche suddividere direttamente il tema direttamente in user story. Tutto questo ci porta ai requisiti.\newline
+\centeredImage{document/img/mylittleworld.png}{My Little World - Prima versione del modello}{0.4}
+Marcel però nel tempo ha cambiato idea sul modello. Per gestire realtà più complesse serve una struttura più complessa. Ora si parte dalle capabilities(funzionalità) del prodotto. Eventualmente è possibile definire dei temi (opzionalmente). Dato ciò che può fare il sistema si possono derivare delle features che eventualmente possono corrispondere a dei temi. La feature può essere implementata da una use story o ad un epic, che è a sua volta composta da user story. Il modello è fatto così perché è molto facile partire da cosa il sistema deve fare per poi arrivare a come suddividere su più livelli il lavoro.
+\centeredImage{document/img/mylittleworld2.png}{My Little World - Versione aggiornata del modello}{0.8}
+
+\subsubsection{User Stories vs. Condition of Satisfaction}
+Un esempio trovato sul web: l'idea da cui partire è creare un sito per vendere birre. Sono state identificate quattro funzionalità:
+\begin{itemize}
+	\item Selezione di una birra automatico per il party;
+	\item Scelta di nuove birre da assaggiare;
+	\item Ordinare la birra preferita di nuovo;
+	\item Raccomandare delle birre costose.
+\end{itemize}
+L'autore propone un pattern per descrivere le user story, il cui scopo è
+\begin{itemize}
+	\item Scegliere il nome della user story;
+	\item Definire la user story;
+	\item Gli associo una CoS.
+\end{itemize}
+
+\paragraph{Automatic Selection}
+\textbf{Definizione}: As Jon (un manager che non ha tempo per selezionare le birre da portare al party), I want to get beers selected by the system, so that I can imrpress my friends by variety of rare brands.\newline
+\textbf{CoS}: Jon può impressionare i suoi amici, facendo un figurone selezionando diverse birre da diverse parti del mondo.\newline
+
+\paragraph{New beers to taste}
+\textbf{Definizione}: As Jon, I want to see beer catalog so I can choose the some new one to taste.\newline
+\textbf{CoS}: Jon può vedere i sapori drettamente dal catalogo senza dovere scendere nei dettagli della birra.\newline
+
+\paragraph{Favorite beer order}
+\begin{info}
+	Bisognerebbe definire cosa si intende con Favorite, dato che una birra potrebbe essere chiamata in questo modo se rispetta determinati canoni (comprata il maggior numero di volte da sempre, nelle ultime due settimane, etc.)
+\end{info}
+\textbf{Definizione}: As a returning customer I want to see my favorite beers, so I can order them again.\newline
+\textbf{CoS}: vuoto (bhe, è un parametro opzionale, ma la mancanza di una CoS potrebbe indicare la mancanza di business value, secondo l'autore questo parametro di può omettere, ma è questione di opinioni).\newline
+
+\paragraph{Recommend expensive beers}
+\textbf{Definizione}: As a store owner, I want the system to recommend expensive beers, so we can increase our profit.\newline
+\textbf{CoS}: Non pressare troppo l'utente. Bisogna stare attenti a non essere troppo invadenti, proporre qualche birra costosa ma non troppo spesso. \newline
+
+\begin{warn}
+	\textbf{Quando è meglio formulare le CoS? Prima o dopo la definizione di user stories?}
+	Come al solito è questione di opinioni, dipende anche dalla user story. Non c'è una vera e propria regola, a volte è più facile definire prima la definizione per poi tirare fuori la CoS, mentre a volte è proprio la CoS che ci aiuta nella definizione della user story.
+\end{warn}
+
 \subsection{Business process : l’uso dei diagrammi}
+\subsubsection{Supporto alla raccolta dei Requisiti}
+A volte il committente non riesce a immaginare bene la soluzione e i senior non trovano valore economico nel progetto. In questo caso si può supportare il processo di raccolta dei requisiti con diagrammi di processi aziendali, workflow, prototipizzazione, verifica dell'impatto della solzione, SWOT analysis.
+\subsubsection{Business Process}
+Un processo aziendale è un insieme di attività con dettaglio precisate che prendono dell'input (può essere per esempio un ordine o un materiale, può essere di varia natura, concreto o astratto) da più sorgenti e producono un cambiamento di stato che fornisce business value. 
+\centeredImage{document/img/businessprocess.png}{Business Process}{0.5}
+\subsubsection{Business Process Diagram}
+\centeredImage{document/img/businessprocessdiagram.png}{Simboli del Business Process Diagram}{0.4}
+Esistono diversi formati, nel seguente si legge dall'altro verso il basso e da sinistra verso destra.
+\centeredImage{document/img/topdownleftright.png}{Top-Down, Left-Right Format}{0.5}
+In questo formato esiste una corsia per ogni elemento che viene coinvolto nel processo.
+\centeredImage{document/img/swimlane.png}{Swim-Lane Format}{0.5}
+In questo formato invece si cerca di chiarire meglio il contesto.
+\centeredImage{document/img/contextdiagrammingprocess.png}{Context Diagramming Process}{0.5}
+Diverse rappresentazioni possono donarci diverse informazioni, il tipo di rappresentazione dipende fortemente dal tipo di processo. In azienda
+\subsection{Business Process Management}
+I processi di business devono essere gestiti e devono essere progettati. Lavorare sui processi aziendali in maniera iterativa è una modalità. Una volta costruito il modello è possibile simularlo per vedere se i parametri impostati rispettano le aspettative. Una volta dopo aver simulato e appurato il funzionamento si passa all'implementazione, all'esecuzione e al monitoring. L'infrastruttuta tecnologica può cambiare molto rapidamente. Approcci utilizzabili sono AGILE e DevOps.
+
+\subsubsection{Workflow}
+Il \textbf{workflow} è l'automazione di un processo di business totale o parziale, durante la quale documenti, dati etc. sono scambiati tra entità coinvolte per svolgere con il supporto di un sistema software le attività previste.\newline
+Il primo passo per automatizzare è fornire la definizione dei processi di business. A volte è necessario modificarli per poterli automatizzare.
 \subsection{Scegliere il PMLC Model}
 \subsection{Scrivere il Project Overview Statement (POS)}
 \newpage
