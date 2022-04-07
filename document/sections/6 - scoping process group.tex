@@ -1,4 +1,3 @@
-
 \section{Scoping Process Group}
 \subsection{Tools, templates e processi per definire lo scope di un progetto}
 Per definire lo scope di progetto è possibile utilizzare tantissimi strumenti, templates e processi, ce ne sono veramente tanti, anche la riunione è considerabile uno strumento, eccone alcune:
@@ -324,6 +323,121 @@ I processi di business devono essere gestiti e devono essere progettati. Lavorar
 \subsubsection{Workflow}
 Il \textbf{workflow} è l'automazione di un processo di business totale o parziale, durante la quale documenti, dati etc. sono scambiati tra entità coinvolte per svolgere con il supporto di un sistema software le attività previste.\newline
 Il primo passo per automatizzare è fornire la definizione dei processi di business. A volte è necessario modificarli per poterli automatizzare.
+
+\subsubsection{Proof of Concept, Prototipo, MVP}
+Si potrebbe essere incerti su ciò che può essere il risultato. Abbiamo già detto che la prototipizzazione può esser un possibile modo per chiarire le idee. Non esiste però un solo modo per prototipizzare:
+\begin{itemize}
+	\item \textbf{Proof of Concept (PoC)}: utilizzato quando è necessario verificare che una certa idea è fattibile dal punto di vista tecnico. Per esempio quando è necessario utilizzare una nuova tecnologia e si è incerti sul successo. Sarebbe necessario rimandare il più possibile gli aspetti tecnici, ma in questo caso è meglio capire fin da subito quanto gli aspetti tecnici sono rischiosi. La tecnologia in questo caso è una CoS molto importante e ha molto peso. In questo caso non si crea l'intero sistema, ma si cerca di minimizzare il lavoro, cercando di capire se i punti critici risultano fattibili, realizzando ed applicando per esempio l'algoritmo su cui si hanno incertezze su dati che non sono necessariamente appartenenti al dominio di interesse. Se analizzando le performance si ottengono buoni risultati allora attenuiamo il rischio. Punti chiave sono la minimizzazione del lavoro, ma è necessario simulare il sistema in modo che sia il più vicino possibile a quello reale, almeno nei punti critici.
+	\item \textbf{Prototipo}: Significa creare il prodotto desiderato in una sua rappresentazione per mostrare l'aspetto e le modalità d'uso all'utente per poter identificare problemi in modo da poter apportare eventuali correzioni e miglioramenti il prima possibile.
+	\begin{warn}
+		Sia PoC che il prototipo hanno in output un sistema o un prodotto funzionante, che tuttavia non può essere utilizzato come punto di partenza per il progetto vero e proprio. I risultati non possono essere utilizzati in alcun modo e vanno gettati non appena il loro scopo viene raggiunto.
+	\end{warn}
+	\item \textbf{Minimum Viable Product (MVP)}: C'è più lavoro da fare per mostrare se il prodotto raggiunge le aspettative del cliente. Si tratta di una prima versione del software in cui vengono implementate solo le funzioni principali. In questo caso il prodotto non viene gettato come accade negli altri due casi ma viene utilizzato per continuare a sviluppare il prodotto finale. In questo caso il codice deve essere di qualità sin dalla prima release.
+\end{itemize}
+\subsubsection{SWOT Analysis}
+Una tecnica di analisi e di pianificazione strategica impiegata per poter identificare quattro componenti, due dei quali sono fattori interni mentre gli altri sono esterni:
+\begin{itemize}
+	\item \textbf{Strenghts (punti di forza)} (interna): caratteristiche del progetto che possono darci un vantaggio rispetto alla concorrenza (es: saper utilizzare molto bene una tecnologia, avere una clientela fissa, staff skilled, etc.).
+	\item \textbf{Weaknesses (debolezze)} (interna): caratteristiche del progetto che possono darci svantaggio rispetto alla concorrenza (es: mancanza di risorse, mancanza di conoscenza su tecnologie, disorganizzazione, etc.).
+	\item \textbf{Opportunità (opportunities)} (esterna): elementi relativi al mondo esterno che possono essere sfruttate per portare vantaggio al progetto (es: aree del mercato non coperte etc.).
+	\item \textbf{Threats (minacce)} (estrena): elementi relativi al mondo esterno che possono causare problemi nel progetto (es: nuovi competitors, cattive recensioni, cambiamenti di regole, etc.).
+\end{itemize}
+Esistono varie rappresentazioni per la SWOT analysis, a quadranti, ad elenchi etc.
+\subsection{Modello di  Business}
+Descrive le modalità con cui l'organizzazione intende creare distribuire e raccogliere valore. Il modello di Business deve interessarci, perché dobbiamo capire come distribuire il budget. Quando dobbiamo vendere un prodotto non pensiamo solo al quanto incasseremo dalla vendita ma anche al come dovremmo vendere il prodotto. Un modello di business di esempio: il cliente paga per un software che sarà suo per sempre. Un modello di business differente può essere ad esempio una licenza che scade mensilmente. Anche le modalità con cui va fornita assistenza dipende dal modello di business. Tutte queste scelte hanno un impatto sul quantitativo di denaro a disposizione dell'azienda.
+
+\noindent Il modello di Business non va visto come un singolo concetto macro, anche una revisione interna di un processo aziendale in cui nessun cliente esterno è interpellato influisce sul modello di business.
+
+\noindent Un approccio molto interessante e facile da usare è il modello Canvas. Non vedremo come funziona a livello approfondito, ci basterà l'aspetto visuale:
+\centeredImage{document/img/businessmodel.png}{Modello di Business}{0.5}
+Parte definendo il valore che noi offriamo ad un cliente. Il valore va definito come business value. Il cliente è necessario raggiungerlo in qualche modo, per farlo esistono diversi canali possibili. Poi è necessario instaurare un rapporto con il cliente. Tutto quello che riguarda il rapporto col cliente incide sul fatturato. Anche la scelta dei cliente impatta. Per produrre valore ho bisogno di attività chiave, di persone, partner chiave.
 \subsection{Scegliere il PMLC Model}
+Il grado di completezza della RBS è il fattore più importante per decidere il modello da utilizzare. Più è alta l'incertezza e più dovremmo stare lontani da un approccio classico ed iterativo.\newline
+Solitamente i requisiti di alto livello sono quelli che forniscono in modo diretto la maggior parte del business value. Facciamo ancora una volta un recap:
+\begin{itemize}
+	\item \textbf{Lineare}: La soluzione ed i requisiti sono definiti molto chiaramente. Non sono previsti molti cambiamenti di scope. Il progetto è di routine, molto ripetitivo. Possono essere utilizzati template.
+	\item \textbf{Incrementale}: Le condizioni sono le stesse dell'approccio lineare ma il cliente desidera procedere in maniera più incrementale. Questo accade perché possono essere più probabili le richieste di cambio dello scope.
+	\item \textbf{Iterativo}: Si pensa che i requisiti possano cambiare facilmente. Alcuni requisiti verranno scoperti in corso d'opera. Alcuni aspetti della soluzione non sono neanche stati identificati quando si parte.
+	\item \textbf{Adattivo}: La soluzione ed i requisiti si conoscono solo parzialmente. Alcune funzionalità non sono ancora state identificate. I cambiamenti di scope sono praticamente sicuri.  Il progetto è orientato allo sviluppo di un nuovo prodotto o al miglioramento di un processo già esistente. Mancanza di tempo e deadline stringenti che non permettono un re-plan.
+	\item \textbf{Extreme}: I goal e le soluzioni non sono affatto chiare. Il progetto è di tipo R \& D.
+\end{itemize}
 \subsection{Scrivere il Project Overview Statement (POS)}
+Lo step finale è costruire un documento, una descrizione sintetica del progetto (Wysocki parla di una pagina "singola"). Il grado di sintesi deve essere estremo, ma deve rappresentare:
+\begin{itemize}
+	\item Una \textbf{dichiarazione generale} che descrive in cosa consiste il progetto. Quali sono gli obiettivi e i goal?;
+	\item Un \textbf{riferimento} per il team di pianificazione. L'importante è non perdere l'integrità concettuale. Deve essere chiaro in modo da capire chiaramente di cosa stiamo parlando;
+	\item Un \textbf{aiuto per le decisioni} riguardanti il progetto. A volte alcune idee vengono definite chiaramente sin da subito e non dovrebbero essere disperse;
+	\item Il documento utilizzato per ottenere l'approvazione del progetto e il nulla osta a procedere con la pianificazione.
+\end{itemize}
+Un documento alternativo al POS si chiama Project Charter.
+\subsubsection{Contenuto del Project Overview Statement}
+Indipendentemente da come verrà organizzato il documento, questi cinque punti ci devono essere:
+\begin{itemize}
+	\item \textbf{Problem/Opportunity}: Un progetto può aiutare a risolvere un problema, a prendere un'opportunità o ad un mix dei due.
+	\item \textbf{Project Goal}: Potremmo avere un problema o un opportunità ma possiamo catturarlo in mille modi diversi. Ci sono tanti possibili goals dato il \textbf{Problem/Opportunity}. Importante è che il Goal sia correlato. Il goal non può non essere allineato con il problema o l'opportunità. Di solito si tratta di una parte piuttosto sintetica. Bastano uno o due statement.
+	\item \textbf{Project Objectives}: Definiscono meglio quali saranno gli obiettivi da perseguire dato il \textbf{Goal}. Anche qua obiettivi e goal devono essere allineati. Bisogna avere dei riferimenti per capire cosa è classificabile come obiettivo. Deve essere chiaro cosa è incluso e cosa no. In questa parte va definito anche quali sono i deliverables (anche la documentazione). Anche in questo punto possono essere utili dei criteri, un possibile modo è utilizzare i criteri S.M.A.R.T:
+	\begin{itemize}
+		\item \textbf{Specific}: essere specifici nel definire l'obiettivo.
+		\item \textbf{Measurable}: i progressi devono poter essere misurati in maniera quantificabile.
+		\item \textbf{Assignable}: definire chi deve conseguire il completamento di un obiettivo.
+		\item \textbf{Realistic}: deve rispondere a qualcosa che è perseguibile.
+		\item \textbf{Time-Related}: deve essere stimabile l'attività necessaria e capire quanto tempo servirà, in modo da poter stabilire deadline e capire se è fattibile.
+	\end{itemize}
+	Questi sono solo degli esempi, anche in questo caso le keyword possono essere interpretate in modo differente.
+	\item \textbf{Success Criteria}: Criteri semplici spesso allineati con gli obiettivi ma non necessariamente. Ci aiuta a rispondere alla domanda "In base a quale criterio dirò che il risultato è soddisfacente?". I criteri devono essere necessariamente quantitativi perché misurabili. Devono essere legati al concetto di business value. Spesso possono essere espressi in termini di:
+	\begin{itemize}
+		\item \textbf{Increased Revenue (IR)}: aumento delle entrate;
+		\item \textbf{Avoided Costs (AC)}: costi evitati;
+		\item \textbf{Improved Services (IS)}: miglioramento dei servizi;
+	\end{itemize}
+	\item \textbf{Assumptions/Risks/Obstacles}: Potrebbero essere sezioni indipendenti. Le assunzioni sono cose che si definiscono e si da per scontato che ci saranno (es: il team deve lavorare full time). I rischi e gli ostacoli sono collegati. Gli aspetti più ricorrenti:
+	\begin{itemize}
+		\item \textbf{tecnologici}: nuove tecnologie o tecnologie deprecate;
+		\item \textbf{ambienti}: cambi di personale;
+		\item \textbf{interpersonali}: relazioni tra le persone;
+		\item \textbf{culturali}: l'ambito del progetto è conveniente?;
+		\item \textbf{relazioni causali}: la soluzione risolverà il problema?
+	\end{itemize}
+\end{itemize}
+In questo documento mancano tutti i requisiti. Non sono importanti, questo è un documento di sintesi, i requisiti stanno altrove. Il senior management che legge questo documento non è interessato ai dettagli.
+
+\subsubsection{Esempi di Goal Statement}
+Notare come ogni singola parte delle frasi è importante.
+\begin{itemize}
+	\item \textbf{Apollo}: "Far sbarcare un uomo sulla luna entro la fine della decade e farlo ritornare in modo sicuro sulla terra.";
+	\item "Creare un nuovo sito web per la nostra compagnia per aumentare le vendite online del 20\% entro il prossimo anno.";
+	\begin{info}
+		In questo caso non si capisce neanche il contesto, se è un problema, una opportunità etc. ma l'obiettivo è chiaro. Notare come non si specifichi che il sito sia un eCommerce, potrebbe anche non dare la possibilità di acquisti online e potrebbe anche solo sponsorizzare. Questi dettagli non stanno qui.
+	\end{info}
+	\item "Realizzare un software di ERP per la nostra compagnia entro un anno per aumentare la soddisfazione dei dipendenti e le performance dei processi di almeno 30\%";
+	\begin{info}
+		Potrei doverlo cambiare perché non sono contento del sistema attuale. In questo caso il termine performance è molto vago. Da qualche altra parte deve essere spiegato e definito meglio il concetto di performance, che potrebbe essere definito in modo differente da figure differenti.
+	\end{info}
+	\item "Sviluppare un nuovo strumento di ricerca per poter utilizzare della conoscenza esistente a disposizione, in un anno posso accumulare fino a un milione di query e voglio che l'utente sia soddisfatto di almeno uno dei top tre risultati offerti dalla query, per il 90\% delle query";
+	\begin{info}
+		Da questo goal si evincono chiaramente anche alcuni dettagli del sistema, che sono stati descritti per constatare quale fosse l'obiettivo da raggiungere. In questo caso essendo i vincoli molto stringenti serve un sistema di monitoraggio più potente di un semplice questionario.
+	\end{info}
+	\item "Aggiornare il servizio del sistema clienti entro il 31 ottobre per raggiungere una media di tempo di attesa di non più di due minuti."
+		\begin{info}
+		Si evince che il sistema esiste già. Misurare in questo caso è più facile. Sistemi di questo tipo non sono semplici da calibrare e serve chiarire bene in che modo affrontare il problema in caso di picchi di chiamate. Come si può affrontare il problema? Ad esempio avvisando direttamente il cliente con un messaggio preconfigurato in cui si avverte che si cono problemi.
+	\end{info}
+\end{itemize}
+\noindent Non è necessario che stia davvero tutto in una paginetta, in progetti più complessi ne servono alcune. Gli elementi non inclusi nel POS perché troppo specifici e dettagiati devono essere inclusi nel Project Definition Statements (PDS). La lista di elementi che può essere inserita on questo documento è molto estresa. Ogni elemento raccolto in più è un buon input per le fasi successive. L'importante resta sempre il non perdere l'integrità concettuale.
+\subsubsection{Allegati POS}
+Si possono includere alcuni allegati:
+\begin{itemize}
+	\item \textbf{Analisi dei rischi}
+	\item \textbf{Analisi finanziaria}: che include studi di fattibilità, analisi dei costi e benefici. analisi di breakeven, ritorno degli investimenti...
+\end{itemize}
+
+\subsubsection{Alternative - Project Charter}
+PMBOK propone di utilizzare il Project Charter. Si tratta di un altro tipo per riassumere il POS ma ha una struttura leggermente diversa. Il documento autorizza formalmente l'esistenza del progetto. Una volta approvato il documento si può procedere col planning. Gli input includono:
+\begin{itemize}
+	\item \textbf{Project statement of work}: vanno definiti i bisogni dell'azienda, il product scope description e lo strategic plan.
+	\item \textbf{Business case}
+	\item \textbf{Agreements}
+	\item \textbf{Enterprise enviromental factors}
+	\item \textbf{Organizational process assets}
+\end{itemize}
+
 \newpage
