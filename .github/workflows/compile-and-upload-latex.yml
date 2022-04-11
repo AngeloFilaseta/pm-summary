@@ -16,8 +16,8 @@ jobs:
           root_file: main.tex
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode --shell-escape
       - name: Rename file 
-        run: mv main.pdf layangelo-latex.pdf
+        run: mv main.pdf pm-summary.pdf
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          files: layangelo-latex.pdf
+          files: pm-summary.pdf
