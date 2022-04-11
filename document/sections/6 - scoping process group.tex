@@ -259,9 +259,9 @@ Non necessariamente una user story corrisponde ad un solo beneficio. magari ci s
 
 \paragraph{My little world}
 Un esempio di dibattito su user story, feature, epic etc. è dato dal modello "my little world" di Marcel Britsch. Può essere utile sviluppare il concetto di \textit{Tema(Theme)} da immaginare come un obiettivo, una delle feautre principali del sistema da sviluppare, suddivisibile in diverse epiche che sono a loro volta suddivisibili in user story. Possibile anche suddividere direttamente il tema direttamente in user story. Tutto questo ci porta ai requisiti.\newline
-\centeredImage{document/img/mylittleworld.png}{My Little World - Prima versione del modello}{0.4}
-Marcel però nel tempo ha cambiato idea sul modello. Per gestire realtà più complesse serve una struttura più complessa. Ora si parte dalle capabilities(funzionalità) del prodotto. Eventualmente è possibile definire dei temi (opzionalmente). Dato ciò che può fare il sistema si possono derivare delle features che eventualmente possono corrispondere a dei temi. La feature può essere implementata da una use story o ad un epic, che è a sua volta composta da user story. Il modello è fatto così perché è molto facile partire da cosa il sistema deve fare per poi arrivare a come suddividere su più livelli il lavoro.
-\centeredImage{document/img/mylittleworld2.png}{My Little World - Versione aggiornata del modello}{0.8}
+\centeredImage{document/img/mylittleworld.png}{My Little World - Prima versione del modello}{0.35}
+\noindent Marcel però nel tempo ha cambiato idea sul modello. Per gestire realtà più complesse serve una struttura più complessa. Ora si parte dalle capabilities(funzionalità) del prodotto. Eventualmente è possibile definire dei temi (opzionalmente). Dato ciò che può fare il sistema si possono derivare delle features che eventualmente possono corrispondere a dei temi. La feature può essere implementata da una use story o ad un epic, che è a sua volta composta da user story. Il modello è fatto così perché è molto facile partire da cosa il sistema deve fare per poi arrivare a come suddividere su più livelli il lavoro.
+\centeredImage{document/img/mylittleworld2.png}{My Little World - Versione aggiornata del modello}{0.75}
 
 \subsubsection{User Stories vs. Condition of Satisfaction}
 Un esempio trovato sul web: l'idea da cui partire è creare un sito per vendere birre. Sono state identificate quattro funzionalità:
@@ -431,13 +431,57 @@ Si possono includere alcuni allegati:
 \end{itemize}
 
 \subsubsection{Alternative - Project Charter}
-PMBOK propone di utilizzare il Project Charter. Si tratta di un altro tipo per riassumere il POS ma ha una struttura leggermente diversa. Il documento autorizza formalmente l'esistenza del progetto. Una volta approvato il documento si può procedere col planning. Gli input includono:
+PMBOK propone di utilizzare il Project Charter. Si tratta di un altro tipo per riassumere il POS ma ha una struttura leggermente diversa. Il documento autorizza formalmente l'esistenza del progetto. Una volta approvato il documento si può procedere col planning.
+Il Project Charter stabilisce cosa dovrà essere il progetto e tra le altre cose stabilisce la partnership tra chi svilupperò la soluzione e chi la richiede.
+Questo documento NON è un contratto, il contratto verrà stipulato in caso di progetto esterno ma si tratta di un documento diverso. Col Project Charter specifichiamo come l'organizzazione raggiungerà la soluzione. Il documento una volta che viene approvato definisce la soluzione, ogni volta che si cambia idea sulla soluzione bisogna tornare al processo di scoping, e quindi a modificare anche questo documento.
+Gli input potrebbero essere dei documenti che insieme componengono il Project Charter ed includono:
 \begin{itemize}
-	\item \textbf{Project statement of work}: vanno definiti i bisogni dell'azienda, il product scope description e lo strategic plan.
-	\item \textbf{Business case}
-	\item \textbf{Agreements}
-	\item \textbf{Enterprise enviromental factors}
-	\item \textbf{Organizational process assets}
+	\item \textbf{Statement of work (SOW)}: è la descrizione del risultato che vogliamo ottenere. Non è ben specificato in che modo va scritto, l'importante è che le idee siano chiari per ogni parte.
+	Per progetti interni si fornisce il SOW in funzione dei bisogni dell'azienda, mentre per progetti esterni può essere una richiesta documentata dal cliente stesso (es: RFP, RFI, un contratto, un bando). Un SOW può essere composto dai seguenti elementi:
+	\begin{itemize}
+		\item \textbf{Business need}: i bisogni aziendali (o ci vengono forniti o serve una fase di analisi).
+		\item \textbf{Product scope description}: La keyword Product potrebbe essere anche un servizio o qualsiasi altra cosa. Bisogna determinare le funzionalità e le caretteristiche del prodotto.
+		\item \textbf{Strategic plan}: un piano strategico relativo al progetto, ossia sul medio e lungo periodo e non solo sul breve (deve essere allineato al piano strategico aziendale). Anche chi non è ad un livello gerarchico alto deve capire bene la visione  aziendale in modo da poterla assecondare nel migliore dei modi.
+	\end{itemize}
+	\item \textbf{Business case}: fornisce tutte le informazioni necessarie per determinare se il progetto vale o meno l'investimento richiesto. Ci si può rifiutare di fare un progetto se non porta abbastanza benefici, puntando su altri progetti più proficui.Può essere creato utilizzando i seguenti elementi:
+	\begin{itemize}
+		\item \textbf{bisogni di mercato}: il mercato in generale richiede determinate tecnologie, sostanzialmente a volte va "seguita la moda";
+		\item \textbf{bisogni dell'organizzazione}: a volte il progetto può portare benefici all'azienda;
+		\item \textbf{richiesta del cliente}:  bisogna verificare se la richiesta del cliente può essere accolta. A volte non è conveniente;
+		\item \textbf{biogni tecnologici}: l'azienda non può utilizzare una vasta gamma di tecnologie se poi le usa male, meglio poche ma buone. Per questo non si accettano tutti i progetti, potremmo andare in perdita per i troppi costi dovuti alla formazione;
+		\item \textbf{requisiti legali}: i vincoli legali che vengono imposti sul contratto e l'ambiente esterno vincolano il progetto;
+		\item \textbf{impatto ecologico}: vincoli su quali mezzi utilizzare per limitare l'impatto ecologico; Non è solo una questione ideologica ma anche legale;
+		\item \textbf{bisogni sociali}: bisogni delle persone in generale.
+	\end{itemize}
+	\item \textbf{Agreements}: Molto spesso quando partiamo a definire cosa dobbiamo inserire in un progetto ci sono già degli accordi tra le parti. Potrebbero essere contratti, collaborazioni in alcuni ambiti, degli accordi sul livello di servizio (Service Level Agreeents (SLA)), memorandum d'intesa (Memorandum of Understanding (MOU)), lettere di intenti e accordi, accordi verbali (informali).
+	\item \textbf{Enterprise enviromental factors}: sono i fattori ambientali aziendali che possono influenzare il processo di sviluppo descritti nel project Charter, sono inclusi stadard di vario tipo (governativi, di settore), regolamenti, cultura e struttura organizzativa, condizioni di mercato.
+	\item \textbf{Organizational process assets}: Sono gli asset in termini di processi organizzativi, includono le definizione dei processi, le linee guida, l'utilizzo di templates, informazioni storiche, utilizzo di esperienza passata etc.
 \end{itemize}
-
+\subsubsection{Elementi per un buon Project Charter}
+Un buon Project Charter deve contenere in particolare alcuni elementi. Non si tratta di un elenco ordinato, l'importante è la presenza di tutti questi punti:
+\begin{itemize}
+	\item \textbf{obiettivi di progetto misurabili e relativi criteri di successo}: a fine progetto, in fase di pianificazione ed esecuzione ci servono per poi essere sicuri che i risultati vengono raggiunti;
+	\item \textbf{requisiti di alto livello}: potrebbero essere gli obiettivi o un dettaglio ulteriore da aggiungere. Ad esempio possiamo mettere sia il primo che il secondo livello di un RBS;
+	\item \textbf{assunzioni e vincoli}: incidono pesantemente sui vincoli e su come verranno implementati;
+	\item \textbf{descrizione di alto livello del progetto e dei suoi confini (boundaries)}: un buon riferimento, soprattutto durante la fase di pianificazione;
+	\item \textbf{rischi di alto livello}: i rischi più rilevanti per un senior manager;
+	\item \textbf{riepilogo delle milestone di progetto}: la milestone è un punto in cui bisogna arrivare in cui un certo numero di requisiti sono soddisfatti. Questo aspetto è un po' prematuro, ma ha senso farlo qua perché ci sono anche delle "milestone concettuali" per capire cosa è importante cosa no. Ad esempio si possono raggruppare alcuni requisiti perché ci sono forti dipendenze per cui nessuno può essere utilizzato senza che anche altri siano presenti;
+	\item \textbf{riepilogo del budget}: e per cosa utilizzarlo;
+	\item \textbf{elenco degli stakeholder}: non c'era nel PoS, ma è una buona idea segnare ogni stakeholder.
+	\item \textbf{requisiti per l'approvazione del progetto}: diverso dai criteri di successo. Potrebbe mappare i criteri di accettazione, ma può essere utilizzato per capire come fare i test.
+	\item \textbf{project manager assegnato, responsabilità e livello di autorità}: spesso si ha già una pre-assegnazione. Non è detto che le risorse utilizzate durante la fase di planning etc. siano le stesse che poi lavoreranno al progetto.
+	\item \textbf{Nome e autorità dello sponsor e di tutte le "persone" che autorizzano il project charter}: A volte non si scrive chi è lo sponsor perché spesso dalle riunioni si sa, ma in una versione interna è ottimo specificarlo per farlo sapere anche a chi magari non ha partecipato.
+\end{itemize}
+\subsection{Approval Process}
+Il senior manager potrebbe farsi alcune domande per valutare il progetto, sarebbe ottimo riuscire a rispondere in anticipo (non è un elenco esaustivo):
+\begin{itemize}
+	\item \textbf{Quanto è importante il problema o l'opportunità per l'organizzazione?} 
+	\item \textbf{Quanto il progetto è legato ai Critical Sucess Factors aziendali?}: sarebbero gli interessi dell'azienda, i desideri, i piani strategici dell'azienda ci dicono cosa è importante e dobbiamo capire se il progetto è legato ai nostri valori e fattori.
+	\item \textbf{Il goal statement è legato direttamente al problema/opportunità?}: il goal deve essere allineato con il problema.
+	\item \textbf{Gli obiettivi sono una chiara rappresentazione del goal statement?}: Stessa cosa della domanda precedente, ma la domanda è posta in termini degli obiettivi.
+	\item \textbf{C'è sufficiente business value, come misurato dai criteri di successo per giustificare i costi del progetto?}: A volte si può andare in perdita per un vantaggio che si otterrà in futuro (investimento).
+	\item \textbf{La relazione tra gli obiettivi del progetto e i criteri di successo è stabilita chiaramente?}: gli obiettivi devono quadrare con un qualche cosa di misurabile che mi dice che sono riuscito nei miei intenti.
+	\item \textbf{I rischi sono troppo alti e il business value troppo basso?}: mi prendo troppi rischi rispetto al valore atteso?
+	\item \textbf{Può il senior management mitigare i rischi che sono stati identificati?}: Se il progetto è interessante ma ci sono troppi rischi che potrebbe essere mitigati con delle richieste (questo progetto si può fare, ma ci serve almeno il 20\% di budget in più) 
+\end{itemize}
 \newpage
