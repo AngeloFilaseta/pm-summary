@@ -6,8 +6,8 @@
 ``\centeredImage{#1}{#2}{#3}`` is used to place and center an image. Place the image path as ``#1``, the caption as ``#2``, and a number between 0 and 1 in ``#3`` to specify the widht.
 
 ### Highliting
-``\hly{text}`` and ``\hlY{text}`` are the commands used to highlight.   
-Both use the stock yellow highlighter, but ``\hlY{text}`` is a bit darker.  
+``\hly{text}`` and ``\hlY{text}`` are the commands used to highlight.
+Both use the stock yellow highlighter, but ``\hlY{text}`` is a bit darker.
 
 ### Enviroments
 #### File
@@ -40,15 +40,15 @@ Usage:
 \end{warn}
 ```
 
-## License 
+## License
 This template originates from [LaTeXTemplates](http://www.LaTeXTemplates.com)
 #### Started from:
-__Lachaise Assignment__  
+__Lachaise Assignment__
 Original Authors:
 
 - Marion Lachaise
 - François Févotte
-  
+
 Vel (vel@LaTeXTemplates.com)
 
 Changes from the original template are listed in the ```layout.tex``` file.

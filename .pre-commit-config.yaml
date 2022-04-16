@@ -1,0 +1,32 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v3.2.0
+  hooks:
+  - id: check-added-large-files # prevents giant files from being committed.
+  - id: check-case-conflict # checks for files that would conflict in case-insensitive filesystems.
+  - id: check-merge-conflict # checks for files that contain merge conflict strings.
+  - id: check-executables-have-shebangs # ensures that (non-binary) executables have a shebang.
+  - id: check-symlinks # checks for symlinks which do not point to anything.
+  - id: check-json # checks json files for parseable syntax.
+  - id: check-yaml # checks yaml files for parseable syntax.
+  - id: detect-private-key # detects the presence of private keys.
+  - id: end-of-file-fixer # ensures that a file is either empty, or ends with one newline.
+  - id: mixed-line-ending # replaces or checks mixed line ending.
+  - id: trailing-whitespace # trims trailing whitespace.
+
+- repo: https://github.com/IamTheFij/docker-pre-commit
+  rev: v2.1.0
+  hooks:
+  - id: docker-compose-check # checks that docker-compose files are valid.
+
+- repo: https://github.com/jonasbb/pre-commit-latex-hooks
+  rev: v1.3.0
+  hooks:
+  - id: american-eg-ie # US English requires a comma after "e.g." and "i.e."
+  - id: csquotes # ensure the use of LaTeX csquotes and prohibits manual quotation marks.
+  - id: no-space-in-cite # ensure there are no whitespace characters in the \cite command.
+  - id: tilde-cite # line breaks should never occur before the citation, thus they need to be protected with the ~.
+  - id: unique-labels # ensure each label is only defined once.
