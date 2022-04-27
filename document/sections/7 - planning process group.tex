@@ -15,19 +15,119 @@ Le scadenze sono il miglior metodo di monitoraggio.
 \subsection{Tools, templates e processi per pianificare un progetto}
 Ci sono un sacco di soluzioni software anche in cloud per poter supportare il processo di gestione di un progetto:
 \begin{itemize}
-	\item \textbf{Jira} per i progetti AGILE
-	\item \textbf{Slack} per la comunicazione
-	\item \textbf{Trello} per la gestione di task e card
+	\item \textbf{Jira} per i progetti AGILE;
+	\item \textbf{Slack} per la comunicazione;
+	\item \textbf{Trello} per la gestione di task e card;
 \end{itemize}
 Ognuno ha le sue caratteristiche ed i suoi obiettivi, oltre alle sue preferenze.
 \subsubsection{Tool fisici}
 Le lavagne appese ad una parete con gli sticky notes appesi in giro sono ancora oggi strumenti molto utilizzati, dato che i software non permettono ancora lo stesso grado di flessibilità. I colori dei pennarelli e delle lavagne sono molto utili perché simboleggiano diverse informazioni. Gli sticky note possono essere usati nel seguente modo. Ogni sticky node può essere relativo ad un'attività e può avere un ID, un nome ed una descrizione. Devono essere utilizzati per fornire informazioni rapide e non possono contenere tanti dati. Possono anche contenere il responsabilità di un'attività, le risorse richieste. Servono anche la quantità di lavoro e la durata dell'attività, perché mi danno un quadro generale delle stato delle risorse. La quantità mi da informazioni sui giorni uomo che mi servono e quindi indirettamente il costo. La durata mi serve per mettere a calendario l'attività. Vengono annotati anche Ealiest Start, Earliest Finish, Latest Start, Latest Finish, che sono valori calcolati.
-
-\noindent Le lavagne e i pennarelli vengono utilizzati per rappresentare dipendenze e ordini temporali tra le attività, e ci permettono di identificare il percorso critico.
+\paragraph{Pennarelli}
+Le lavagne e i pennarelli vengono utilizzati per rappresentare dipendenze e ordini temporali tra le attività, e ci permettono di identificare il percorso critico.
 \centeredImage{document/img/marking.png}{Utilizzo dei pennarelli}{0.5}
 Esistono tanti tipi di lavagne, si pososno preparare in base a template etc.
 Le informazioni da tenere a portata di mano attaccati sulla lavagna ci sono il POS, la WBS, il diagramma delle dipendenze, project schedule, resource schedule, issue log (problemi che emergono durante il progetto) etc.
+\paragraph{Sticky Notes}
+Anche gli sticky notes sono uno strumento fondamentale, si pu; pensare di impiegare uno sticker note per inserire informazioni sulle user story. Vanno sintetizzate solo le informazioni fondamentali:
+\begin{itemize}
+	\item nome dell'attività;
+	\item descrizione dell'attività;
+	\item quali e quante risorse servono;
+	\item quali skill servono;
+	\item durata dell'attivitità (dipende da chi la esegue e quante risorse vengono allocate);
+	\item quantità di lavoro (effort in termini di giorni uomo);
+\end{itemize}
+\noindent Queste sono le informazioni necessarie per la migliore organizzazione. A volte è necessario cambiare la pianificazione a causa di imprevisti etc. Avendo a disposizione tutte queste informazioni è molto più semplice e veloce modificare il piano.
+\paragraph{Lavagne}
+Esistono tanti tipi di lavagne e tanti metodi per utilizzarle. La lavagna può essere decorata con molteplici elementi:
+\begin{itemize}
+	\item \textbf{Project Overview Statement (POS)};
+	\item \textbf{Work Breakdown Structure (WBS)};
+	\item \textbf{Diagramma delle dipendenze};
+	\item \textbf{Initial Project Schedule};
+	\item \textbf{Final Project Schedule};
+	\item \textbf{Resource Schedule};
+	\item \textbf{Issues Log}: ogni volta che si incontra un problema si aggiunge a questo stack, una specie di reminder per tenere traccia dei problemi. Può servire anche per capire come approcciare problemi analoghi;
+	\item \textbf{Updated Project Schedule};
+\end{itemize}
+
+\subsubsection{Quanto tempo richiede la pianificazione?}
+La risposta è che tutto dipende dal progetto, ma di seguito vengono riportate alcune stime di Wysocki. Queste stime servono per capire quando NON bisogna esagerare nel pianificare.
+\begin{itemize}
+	\item \textbf{Progetti molto piccoli}: < $\frac{1}{2}$ giornata;
+	\item \textbf{Progetti piccoli}: < 1 giorno;
+	\item \textbf{Progetti medi}: 2 giorni;
+	\item \textbf{Progetti grandi}: 3-4 giorni;
+	\item \textbf{Progetti molto grandi}: ???.
+\end{itemize}
+Chi decide quando è abbastanza? Principalmente l'esperienza. Esistono progetti in cui è necessaria una gestione adattiva e non tradizionale. Più dettagli significa più stabilità. Meno stabilità significa dover pianificare iterativamente durante l'intera durata del progetto.
 \subsection{Pianificare e condurre la Joint Project Planning Session (JPPS)}
+Pianificare ci permette di avere controllo anche in situazioni in cui non si usa un approccio tradizionale. Anche nel planning lo strumento fondamentale sono le riunioni. Ci si incontra e si discute. In un ambiente organizzato con tutti gli strumenti necessari si definiscono i seguenti componenti:
+\begin{itemize}
+	\item \textbf{Attendees}: chi partecipa alle riunioni. Possono essere i seguenti:
+	\begin{itemize}
+		\item \textit{Facilitatore}: Lo può fare uno dei Project Manager o chi ha voluto il progetto. Non deve essere una persona che non ha interessi particolari sul progetto in modo che può essere obiettivo. Può servire per contenere gli interessi e rimanere obiettivo;
+		\item \textit{Project Manager}: Ha la responsabilità sul completamento del progetto. Si concentra sulla fattibilità del piano. Negozia per ottenere business value e rispettare tutti i vincoli di tempo budget e risorse;
+		\item Un altro Project Manager: Può essere il rappresentante del committente, o anche uno completamente imparziale. Può servire per verificare il lavoro del project manager.
+		\item \textit{Consulente nella pianificazione (JPP)}: può essere utile se non conosciamo qualche metodo di lavoro, ad esempio scrum, e quindi può insegnarci il modo in cui ci dobbiamo comportare. A volte può essere un Project Manager Senior (un affiancamento);
+		\item \textit{Tecnografo}: qualcuno che mette in buona copia le informazioni sugli strumenti che utilizziamo. I tecnografi ultimamente stanno diventando i dev stessi. Deve essere una figura con conoscenze sia nel Project Management che negli strumenti software e di supporto (non solo tecnologici, anche lavagne etc.);
+		\item \textit{Core Project Team}: non necessariamente serve tutto il team. Ovvio che in team più piccoli (es: Scrum) è facile che partecipino tutti;
+		\item \textit{Client Representative}: Sarebbe opportuno che si fosse anche il cliente in alcune riunioni di pianificazione. Il team è cruciale perché possono aiutare a definire le attività e i tempi in modo più accurato;
+		\item \textit{Resource Manager}: ci aiuta a capire se le risorse possono essere ben allocate. Deve avere completa visione su tutti i progetti attivi e sulle effettive disponibilità nel tempo delle risorse che sono presenti all'interno dell'organizzazione;
+		\item \textit{Project Champion}: Non ne parla nessuno, ma gli americani ci tengono un sacco. PMBOK lo definisce in modo chiaro. Il project champion è una figura centrale e di potere che non è esattamente coinvolto nel progetto. Si tratta della persona da cui si "va a piangere" quando ci sono problemi seri. Serve una autorità in grado di nullificare i momenti di stallo. La situazione migliore è se il Project Champion è lato cliente. Questa figura non è facile da identificare;
+		\item \textit{Functional Managers}: Passiamo dal cosa al come. La figura che comincia a mettere le basi sulle tecnologie da utilizzare;
+		\item \textit{Process Owner}: Chi possiede i processi su cui bisogna lavorare, magari definendo workflow. Chi gestisce i processi che sono coinvolti nel progetto aiuta a capire cosa non funziona, cosa deve essere cambiato, etc.
+	\end{itemize}
+	\item \textbf{Facilities}: dove faccio la riunione. La scelta non è banale:
+	\begin{itemize}
+		\item la sede non dovrebbe cambiare per l'intera durata del progetto;
+		\item devono essere non solo confortevoli, ma anche lontane da fonti di interruzioni. Se si sceglie un open space è facile dar fastidio o essere infastiditi da altri;
+		\item conviene allestire una facility lontana da fonti di interruzioni;
+		\item può essere considerato l'utilizzo di "breakout rooms".
+	\end{itemize}
+	\item \textbf{Equipment}: quali dispositivi servono (proiettori, sedie, lavagne, flip charts etc.);
+	\item \textbf{Agenda}: cosa verrà discusso.
+	\item \textbf{Deliverables}: che risultati ci aspettiamo da ogni riunione.
+	\item \textbf{Project Proposal}: inizialmente sarà vuota, questa proposta verrà composta con l'avanzare delle riunioni.
+\end{itemize}
+\subsubsection{Agenda tipo (JPPS)}
+Uno schema tipo delle riunioni di pianificazione:
+\paragraph{Sessione 1}
+Le fasi sono divise in:
+\begin{enumerate}
+	\item \textbf{Fase di kick-off}: si ricorda perché e per cosa stiamo pianificando;
+	\begin{itemize}
+		\item Introduzione dello sponsor: chi ha voluto il progetto effettua una rapida presentazione;
+		\item Panoramica dello sponsor sul progetto, sulla sula importanza per l'azienda, la divisione ed il reparto;
+		\item Introduzione del co-project manager del committente(serve per mettere paletti, spiegare come effettuano di solito i progetti, etc.). Utile per capire il punto di vista per capire e prendere le misure per una migliore gestione;
+		\item Introduzione del co-project manager responsabile IT. Importante per pianificare il momento in cui bisogna interagire col cliente;
+		\item Introduzione del core project team;
+		\item Introduzione del tecnografo e del facilitatore (prendono il nome di planning facilation team);
+	\end{itemize}
+	\item \textbf{Working Session}: la fase in cui si lavora sulla effettiva pianificazione:
+	\begin{itemize}
+		\item Validazione e prioritizzazione dei requisiti: si iniziano a fare i conti con le risorse disponibili per verificare se tutto torna;
+		\item Panoramica sull'approccio che si vuole utilizzare per la pianificazione del progetto;
+		\item Generazione e validazione della WBS;
+		\item Stima della quantità di lavoro, durata e risorse richieste: non è necessario fornire troppe risorse ad attività non parallelizzabili o ad attività che possono avere durate lunghe;
+		\item Creazione del diagramma delle dipendenze;
+		\item Individuazione del percorso critico, delle date previste per il completamento del progetto e delle milestone;
+		\item Analisi della schedula e sua compressione (se necessaria);
+		\item Identificazione dei rischi e delle metodologie di mitigazione;
+		\item Ottenere il consenso di tutti i partecipanti sui contenuti del piano;
+		\item Aggiornamento della sessione.
+	\end{itemize}
+\end{enumerate}
+Sono coinvolti:
+\begin{itemize}
+	\item Project Manager;
+	\item Project Team;
+	\item Client (raccomandato);
+\end{itemize}
+Non è raro che però durante il kick-off partecipino tutti.
+
+
+
 \subsection{Scrivere un Project Description Statement (PDS)}
 \subsection{Costruire la Work Breakdown Structure (WBS)}
 \subsection{Stimare la durata delle attività (estimating task duration)}
