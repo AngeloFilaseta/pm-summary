@@ -126,11 +126,170 @@ Sono coinvolti:
 \end{itemize}
 Non è raro che però durante il kick-off partecipino tutti.
 
+\subsubsection{Scrivere un Project Description Statement (PDS)}
+Può avere la struttura simile al POS. Il problema è che al crescere del documento rintracciare le informazioni utili non è semplice. Il PDS può essere una collezione di documenti in cui ognuno ha uno scopo specifico, o semplicemente si può dividere in sezioni apposite:
+\begin{itemize}
+	\item Problem/Opportunity
+	\item Project Goal
+	\item Project Objectives
+	\item Success Criteria
+	\item Assumptions/Risks/Obstacles
+\end{itemize}
+Il PDS contiene una definizione del progetto più dettagliata destinata al team. Non è necessario che sia sintetico. Il suo utilizzo principale consiste nell'assicurarsi che il team abbia una visione comune del progetto.
+\subsection{Ruolo del committente nella JPPS}
+Possono esserci motivi per cui non si vuole avere contato col cliente, ad esempio non si vuole essere troppo trasparenti con le stime dei costi. Il cliente può essere di disturbo durante la fase di pianificazione. Non sempre però è una buona idea ignorarlo.
 
+\noindent Se il cliente viene interpellato può capire il valore del progetto e farsi un'idea più chiara e può fornire feedback utili.
+Il cliente può essere utile per:
+\begin{itemize}
+	\item \textbf{Validazione dei requisiti e POS};
+	\item \textbf{Prioritizzazione dei requisiti}: ora che sappiamo che i requisiti vanno bene possiamo spendere tempo per capire quali requisiti vengo prima degli altri. Può capitare che alcuni vengano proprio esclusi se non è possibile rispettare i costi. Si può utilizzare il metodo MoSCoW: Must, Should, Won't have.
+	\item \textbf{Generazione e validazione WBS}: Se il cliente approva il lavoro che abbiamo definito possiamo stare più tranquilli;
+	\item \textbf{Impegno di risorse da parte del committente}: per esempio è impossibile fissare delle date in cui effettuare operazioni in cui serve il cliente senza prima consultarlo;
+	\item \textbf{Accordo sulla pianificazione del progetto}: Avere un co-project manager lato cliente aiuta ad avere una doppia verifica di ciò che si sta creando. Non sempre apprezzato dai project manager ma molto utile;
+\end{itemize}
+Il committente deve avere "possesso" del piano (se ha partecipato a riunioni sa il motivo di molte decisioni che sono state prese) ed il suo coinvolgimento deve essere significativo.
 
-\subsection{Scrivere un Project Description Statement (PDS)}
+\paragraph{MoSCoW}
+Si tratta di un metodo per classificare i requisiti. Ogni requisiti può cadere in una di queste categorie:
+\begin{itemize}
+	\item \textbf{Must}: requisiti che devono essere assolutamente soddisfatti. Nessuno è sacrificabile. Ohana significa famiglia e famiglia vuol dire che nessuno viene abbandonato. Se questi requisiti non sono presenti a progetto concluso allora non possiamo dire che sia effettivamente terminato;
+	\item \textbf{Should}: requisiti che dovrebbero essere soddisfatti se è possibile in quanto molto utili. Corrispondono a requisiti abbastanza fondamentali ma sacrificabili nel caso in cui siano presenti requisiti alternativi;
+	\item \textbf{Could}: hanno un business value più limitato e quindi sono più sacrificabili degli Should. Sono considerati solo se il tempo e le risorse lo permettono;
+	\item \textbf{Would}: requisiti che sarebbero da includere, ma hanno un valore molto marginale e sono sempre rinviabili al futuro;
+\end{itemize}
+\begin{warn}
+	Potremmo sempre negoziare sul livello di qualità se non vogliamo rimuovere completamente un requisito per una questione di costi.
+\end{warn}
 \subsection{Costruire la Work Breakdown Structure (WBS)}
+Si tratta di una descrizione gerarchica, ad albero che può essere capita anche da un cliente che non ha conoscenze tecniche. 
+Serve a descrivere tutto il lavoro (insieme di attività) che deve essere eseguito nel progetto per poter soddisfare i bisogni del cliente.
+
+\noindent Esiste una relazione tra RBS e WBS, le attività servono ad implementare i requisiti. Potremmo dire che la WBS descrive come soddisfare RBS.\noindent 
+Può essere una buonissima idea generare la WBS a partire dall'RBS. Se lo facciamo sarà più facile valutare se sono stati perseguiti i \textit{criteri di successo}.\newline
+\noindent L'approccio che si utilizza in genere è il seguente: per ogni foglia dell'RBS (requisito più dettagliato) può essere suddiviso in attività che possono essere a loro volta suddivise in ulteriori sotto-attività. Attività troppo grandi sono dispersive e non è facile tracciare come sta andando l'attività. Diventa difficile stimare l'attività e la fase di monitor.\newline
+Esagerare nel suddividere le attività può comportare problemi di monitor ma anche un overhead in fase di pianificazione. Ancora una volta è una questione di trade-off. Può essere utile scendere nel dettaglio anche per chiarire aspetti implementativi, o per esprimere la dipendenza tra attività.
+
+\begin{info}[A cosa serve fare la WBS]
+	Ci permette di poter prendere decisioni di tipo tecnico. Può aiutare a capire che un requisito richiede più lavoro del previsto o che ci sono casi particolari che non sono stati presi in considerazione e quindi servono più test. Usare una certa tecnologia potrebbe non rendere possibile passi di integrazione, etc.
+\end{info}
+
+La WBS ha quattro impieghi:
+\begin{itemize}
+	\item \textbf{Thought Pprocess tool}: aiuta il team e il projetc manager a visualizzare esattamente come il lavoro è stato definito e come deve essere gestito;
+	\item \textbf{Architectural design tool}: permette di capire come le diverse attività sono correlate tra loro;
+	\item \textbf{Planning tool}: strumento di pianficazione per eccellenza. Al livello massimo di dettaglio si possono effettuare stime relative al lavoro da svolgere, alla durata, alle risorse necessarie;
+	\item \textbf{Project status reporting tool}: ci si può chiedere su cosa si sta lavorando e si capisce perfettamente se ci sono ritardi o problemi.
+\end{itemize}
+
+\subsubsection{Generare la WBS}
+Si può come già detto generare la WBS a partire dalla RBS, espandendola. La decomposizione del requisito in attività si ferma quando si raggiunge un adeguato livello di decomposizione.
+Molto importante il concetto di task. Serve definire un po' di nomenclatura anche se, a detta del professore, "è un gran casino" (termine tecnico).\newline
+\begin{warn}[Terminologia]
+	In italiano utilizziamo il termine "attività", mentre in inglese c'è il concetto di "activity" e di "task" che nell'inglese comune sono sinonimi, ma \textbf{di solito} nel mondo del project management viene utilizzato il temine "activity" per riferirsi alle macro-attività, mentre l'unica più piccola della activity, quella al massimo livello di dettaglio è il "task". Non tutti utilizzano questa terminologia, bisogna stare attenti a cosa si intende nel caso specifico. Nel nostro caso cercheremo di stare attenti ad utilizzare i termini nel modo appena definito.
+\end{warn}
+La conversione da RBS a WBS pu; essere eseguita in \st{due} tre modi:
+\begin{itemize}
+	\item Solo un architetto effettua la conversione. Questo causa problemi perché è un collo di bottiglia e non ha feedback da terzi. NON è una buona pratica.
+	\item \textbf{Team Approach}: tutto il team lavora assieme per definire l'intera WBS;
+	\item \textbf{Subteam Approach}: si suddivide il lavoro per cercare di ridurre ulteriormente il collo di bottiglia. In alcuni casi è abbastanza semplice, per esempio dove c'è una forte divisione (es: il caso di frontend-backend).
+\end{itemize}
+\begin{question}[Quanto deve essere grande il team?]
+	Dipende molto dal tipo di progetto. Team molto piccolo possono a vere modalità differenti di lavorare. Viene molto difficile per team molto piccoli utilizzare un approccio di tipo subteam.
+\end{question}
+\subsubsection{Aspetti operativi}
+La WBS si costruisce ne possono lavorare assieme in utilizzando lavagne, pennarelli, memo. In questo modo più persone possono lavorare in parallelo in modo efficace.
+Quando si costruisce la WBS è necessario tenere ben presente il POS e la RBS. Ogni volta che si ragiona sulle attività è necessario verificare se non siamo usciti dallo scope. In caso di incoerenze è necessario intervenire il prima possibile.\newline
+Il modello PMLC scelto influenza il "come" la WBS viene costruita.
+\begin{itemize}
+	\item Se si è scelto un modello \textbf{lineare} o \textbf{incrementale}, la WBS deve necessariamente essere completa;
+	\item La WBS può essere raffinata ad ogni iterazione nel caso di approcci \textbf{iterativi};
+	\item Nel caso di modelli PMLC più aggressivi a causa dell'incertezza sullo scope, la WBS deve essere aggiustata ad ogni iterazione.
+\end{itemize}
+\begin{warn}
+	In alcuni approcci Agile non si parla esplicitamente di WBS. Il perché e come si fa a svolgere pianificazione verrà spiegato più avanti.
+\end{warn}
+
+\subsubsection{Stabilire se una WBS è completa}
+Wysocki definisce sette punti per capire se una WBS è completa:
+\begin{itemize}
+	\item \textbf{Lo stato di completamento è misurabile}: se non sono in grado di capire lo stato di completamente dell'attività allora o non è scritta bene o deve essere decomposta meglio. La definizione del "done", ovvero capire come possiamo dire se una certa attività è completa oppure no (attraverso test, feedback etc.).
+	\item \textbf{Le attività sono ben delimitate}: a volte esistono attività che si concatenano e non si capisce bene quando iniziano, quando finiscono etc.;
+	\item \textbf{Le attività hanno associato un deliverable}: un esempio di deliverable può essere anche del codice di test che se eseguito non fallisce.
+	\item \textbf{Tempi e costi sono facilmente stimabili}: Se un'attività è troppo grossa può essere difficile effettuare stime. A volte può essere anche difficile effettuare stime per poca esperienza o conoscenza. In questi casi si può stare larghi o chiedere consiglio a chi è più esperto.
+	\item \textbf{La durata dell'attività è entro un limite accettabile}: alcune attività se tropo grosse sono difficile da monitorare e controllare.
+	\item \textbf{Un task deve essere considerato come un'attività che non richiede interruzioni per aspettare altri la fine di altri task}: in questo caso si suddivide ulteriormente;
+\end{itemize}
+
+Il settimo criterio è di natura diversa, e pertanto è separato dagli altri. Riguarda il giudizio del Project Manager su alcuni aspetti:
+\begin{itemize}
+	\item Il cliente non ha partecipato alla generazione della WBS quanto ci si aspetta;
+	\item Il project manager ha una sensazione di disagio (un brutto presentimento);
+	\item Il project manager ritiene che modifiche anche rilevanti dello scope possano avvenire con una certa probabilità.
+\end{itemize}
+Ci sono quindi casi in cui la WBS può risultare abbastanza instabile ed incompleta. Bisogna anche dire che però non sempre è possibile fare di meglio, ed è quindi possibile procedere comunque, consapevoli del fatto che possono essere possibili cambiamenti in qualsiasi momento.
+
+\begin{warn}
+	Ci sono situazioni in cui la WBS può essere considerata completa anche senza che tutti i criteri sono soddisfatti. Alcuni esempi, ma le situazioni sono tante:
+	\begin{itemize}
+		\item Il progetto è molto breve;
+		\item Attività molto difficilmente stimabili;
+		\item In presenza di attività soggette a rischi elevati;
+		\item Alta varianza della durata prevista;
+	\end{itemize}
+	Bisogna ancora una volta essere consapevoli delle scelte!
+\end{warn}
+\centeredImage{document/img/wbs.png}{RBS è un subset di WBS}{1}
+\subsubsection{Approcci di costruzione della WBS}
+\begin{itemize}
+	\item \textbf{Noun-type Appoaches}: ad esempio la suddivisione della WBS in componenti fisici o funzionali. Es: il deploy di un singolo componente è una attività;
+	\item \textbf{Verb-type Appoaches}: la WBS si basa più sulle attività o sugli obiettivi;
+	\item \textbf{Organizational approaches}: la divisione si basa su aspetti geografici, in base ai processi di business o le divisione in dipartimenti.
+\end{itemize}
+\subsubsection{Template}
+Molto probabilmente sono già disponibili in azienda template per le WBS in base alle esigenze dei clienti. Spesso i template sono costruiti sulla base di esperienze passate. Il beneficio maggiore è ovviamente che si risparmia un sacco di tempo utilizzandoli, ma insieme alle WBS ci sono anche dati storici che ci aiutano a stimare costi e durate. Grazie ai template è possibile migliorare la qualità dei processi. Si tratta di un processo iterativo in cui il template viene migliorato in base alle esperienze passate.
+
+\noindent I template vengono utilizzati maggiormente in progetti ricorrenti. Alcuni esempi:
+\begin{itemize}
+	\item Distribuire una nuova release di un software;
+	\item Installare una rete in un ufficio;
+	\item Aggiornare una applicazione;
+	\item etc.
+\end{itemize}
 \subsection{Stimare la durata delle attività (estimating task duration)}
+Quando si stima un'attività è una buona idea stimare sia la durata che la quantità di lavoro. Grazie alla durata si può capire se verranno raggiunte le milestone di progetto, mentre grazie ai costi si possono assegnare risorse.
+Ovviamente la durata di un task dipende dalla quantità di lavoro e dalle risorse. La stima di entrambi i parametri va svolta utilizzando la stessa metodologia. Esistono approcci che si basano più sulla stima di uno dei due parametri e deducono l'altro.
+\subsubsection{Durata di un task}
+La durata di un task può variare per diverse ragioni:
+\begin{itemize}
+	\item \textbf{Diversi livelli di inesperienza e competenza}: una persona esperta può badarci molto meno di una non esperta;
+	\item \textbf{Eventi inattesi}: di solito si cercano di mitigare attraverso l'analisi dei rischi;
+	\item \textbf{Uso non efficiente del tempo di lavoro}: bisogna mettere le persone nella condizione di non essere continuamente disturbate;
+	\item \textbf{Errori e fraintendimenti}: la gestione della comunicazione deve essere gestita in modo che non ci siano. Bisogna minimizzare le occasioni in cui si perde tempo per un fraintendimento, proprio perché è scarsamente prevedibile;
+	\item \textbf{Tutti i processi hanno una durata variabile per cause comuni};
+\end{itemize}
+
+\subsubsection{Metodi per stimare la durata di un Task}
+Esistono diversi metodi per stimare la durata di un task:
+\begin{itemize}
+	\item Estrapolazioni basate su attività simili di cui è nota la durata media;
+	\item Analisi di dati storici;
+	\item Utilizzo del giudizio di un esperto;
+	\item Applicazione di una tecnica "consensus-based" (ovvero non esiste una sola persona ad un alto livello gerarchico che sceglie, ma scelgono tutti):
+	\begin{itemize}
+		\item Delphi tecnique: il punto è rispondere all'esigenza di fare sintesi quando ci sono opinioni diverse e contrastanti. La prima consisteva nell'esporre l'attività e richiedere la stima ad ogni partecipante, che segna la sua stima su un foglietto insieme alle motivazioni, in modo anonimo. In seguito un facilitatore elencava le stime insieme alle motivazioni di ciascuno. I foglietti sono anonimi per evitare che le opinioni si polarizzino verso quello che è il desiderio di un superiore. A questo punto ci si può anche fermare e prendere una misura (media, moda, massimo, minimo), ma si perde l'occasione di capire le motivazioni e quindi magari di generare ripensamenti in altre persone. La proposta è di effettuare altri round per verificare se ci sono stati cambi di idee. Dopo qualche round di solito si tende a notare che si converge ad un range più ristretto di valori. Ci si può fermare coi round dopo un numero prefissato o solo una volta che si raggiunge una certa convergenza;
+		\item \textbf{Three-point tecnique};
+		\item \textbf{Wide-band Delphi tecnique};
+	\end{itemize}
+\end{itemize}
+Questi approcci possono essere utilizzati per stimare anche altre quantità, come effort, risorse umane etc.
+
+\paragraph{Altri esempi di tecniche "consensus-based"}
+Esistono altre tecniche che associano una "taglia" ad un task, ovvero un punteggio che può significare qualsiasi cosa (tempo richiesto, rischio, etc.)
+Il "planning poker" è un metodo in cui si sceglie una carta con una taglia tra una serie di taglie. Di solito la sequenza non è lineare. Una sequenza può essere ad esempio quella di Fibonacci (possono essere utilizzate anche cose strane come taglie delle maglie o dei cani). C'è molta discussione sul se questo metodo funzioni oppure no. C'è chi dice che funziona e chi dice che non porta ad alcun risultato effettivo, o a risultati imprecisi.
+
+\noindent Esistono metodi ancora diversi per misurare il carico di lavoro, ad esempio, Lines of Code, Function points, Feature points, Object points etc.
+
 \subsection{Stimare il fabbisogno di risorse (estimating resource requirements)}
 \subsection{Stimare i costi (estimating cost)}
 \subsection{Costruire il project network diagram}
