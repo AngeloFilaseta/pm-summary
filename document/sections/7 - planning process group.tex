@@ -1,0 +1,484 @@
+\section{Planning Process Group}
+\subsection{L’importanza della pianificazione}
+La curva della sofferenza serve per dare una raccomandazione. La pianificazione non è facile da fare, richiede tempo e pazienza. L'inizio del progetto è molto invitante, ma ci sono diversi problemi a partire senza pianificare. Senza pensare alle attività non avremo idea di come verranno collocate nel tempo e non sapremo quanto dureranno. Avere un piano ci consente anche di sapere quali e quante risorse abbiamo a disposizione.
+\centeredImage{document/img/paincurve.png}{Pain Curve secondo Wysocki}{0.5}
+\noindent Con un piano, se dopo una settimana siamo in ritardo mi farò delle domande su cosa non sta funzionano. Senza un piano non so neanche di essere in ritardo, e la domanda viene posticipata...
+Le scadenze sono il miglior metodo di monitoraggio.
+
+\noindent La pianificazione:
+\begin{itemize}
+	\item \textbf{riduce l'incertezza}: stabiliamo a priori attività, chi le deve fare, si capiscono i tempi, quando finisce il progetto, come dovrebbe andare il flusso di cassa etc.
+	\item \textbf{aumenta la comprensione}: Pensando a come implementare la soluzione ci si rende conto che molti dettagli che sembravano ovvi in realtà non lo sono.
+	\item \textbf{migliora l'efficienza}: sapendo chi deve fare cosa si può meglio organizzare tutto quanto in modo che non ci siano "momenti morti".
+\end{itemize}
+
+\subsection{Tools, templates e processi per pianificare un progetto}
+Ci sono un sacco di soluzioni software anche in cloud per poter supportare il processo di gestione di un progetto:
+\begin{itemize}
+	\item \textbf{Jira} per i progetti AGILE;
+	\item \textbf{Slack} per la comunicazione;
+	\item \textbf{Trello} per la gestione di task e card;
+\end{itemize}
+Ognuno ha le sue caratteristiche ed i suoi obiettivi, oltre alle sue preferenze.
+\subsubsection{Tool fisici}
+Le lavagne appese ad una parete con gli sticky notes appesi in giro sono ancora oggi strumenti molto utilizzati, dato che i software non permettono ancora lo stesso grado di flessibilità. I colori dei pennarelli e delle lavagne sono molto utili perché simboleggiano diverse informazioni. Gli sticky note possono essere usati nel seguente modo. Ogni sticky node può essere relativo ad un'attività e può avere un ID, un nome ed una descrizione. Devono essere utilizzati per fornire informazioni rapide e non possono contenere tanti dati. Possono anche contenere il responsabilità di un'attività, le risorse richieste. Servono anche la quantità di lavoro e la durata dell'attività, perché mi danno un quadro generale delle stato delle risorse. La quantità mi da informazioni sui giorni uomo che mi servono e quindi indirettamente il costo. La durata mi serve per mettere a calendario l'attività. Vengono annotati anche Ealiest Start, Earliest Finish, Latest Start, Latest Finish, che sono valori calcolati.
+\paragraph{Pennarelli}
+Le lavagne e i pennarelli vengono utilizzati per rappresentare dipendenze e ordini temporali tra le attività, e ci permettono di identificare il percorso critico.
+\centeredImage{document/img/marking.png}{Utilizzo dei pennarelli}{0.5}
+Esistono tanti tipi di lavagne, si pososno preparare in base a template etc.
+Le informazioni da tenere a portata di mano attaccati sulla lavagna ci sono il POS, la WBS, il diagramma delle dipendenze, project schedule, resource schedule, issue log (problemi che emergono durante il progetto) etc.
+\paragraph{Sticky Notes}
+Anche gli sticky notes sono uno strumento fondamentale, si pu; pensare di impiegare uno sticker note per inserire informazioni sulle user story. Vanno sintetizzate solo le informazioni fondamentali:
+\begin{itemize}
+	\item nome dell'attività;
+	\item descrizione dell'attività;
+	\item quali e quante risorse servono;
+	\item quali skill servono;
+	\item durata dell'attivitità (dipende da chi la esegue e quante risorse vengono allocate);
+	\item quantità di lavoro (effort in termini di giorni uomo);
+\end{itemize}
+\noindent Queste sono le informazioni necessarie per la migliore organizzazione. A volte è necessario cambiare la pianificazione a causa di imprevisti etc. Avendo a disposizione tutte queste informazioni è molto più semplice e veloce modificare il piano.
+\paragraph{Lavagne}
+Esistono tanti tipi di lavagne e tanti metodi per utilizzarle. La lavagna può essere decorata con molteplici elementi:
+\begin{itemize}
+	\item \textbf{Project Overview Statement (POS)};
+	\item \textbf{Work Breakdown Structure (WBS)};
+	\item \textbf{Diagramma delle dipendenze};
+	\item \textbf{Initial Project Schedule};
+	\item \textbf{Final Project Schedule};
+	\item \textbf{Resource Schedule};
+	\item \textbf{Issues Log}: ogni volta che si incontra un problema si aggiunge a questo stack, una specie di reminder per tenere traccia dei problemi. Può servire anche per capire come approcciare problemi analoghi;
+	\item \textbf{Updated Project Schedule};
+\end{itemize}
+
+\subsubsection{Quanto tempo richiede la pianificazione?}
+La risposta è che tutto dipende dal progetto, ma di seguito vengono riportate alcune stime di Wysocki. Queste stime servono per capire quando NON bisogna esagerare nel pianificare.
+\begin{itemize}
+	\item \textbf{Progetti molto piccoli}: < $\frac{1}{2}$ giornata;
+	\item \textbf{Progetti piccoli}: < 1 giorno;
+	\item \textbf{Progetti medi}: 2 giorni;
+	\item \textbf{Progetti grandi}: 3-4 giorni;
+	\item \textbf{Progetti molto grandi}: ???.
+\end{itemize}
+Chi decide quando è abbastanza? Principalmente l'esperienza. Esistono progetti in cui è necessaria una gestione adattiva e non tradizionale. Più dettagli significa più stabilità. Meno stabilità significa dover pianificare iterativamente durante l'intera durata del progetto.
+\subsection{Pianificare e condurre la Joint Project Planning Session (JPPS)}
+Pianificare ci permette di avere controllo anche in situazioni in cui non si usa un approccio tradizionale. Anche nel planning lo strumento fondamentale sono le riunioni. Ci si incontra e si discute. In un ambiente organizzato con tutti gli strumenti necessari si definiscono i seguenti componenti:
+\begin{itemize}
+	\item \textbf{Attendees}: chi partecipa alle riunioni. Possono essere i seguenti:
+	\begin{itemize}
+		\item \textit{Facilitatore}: Lo può fare uno dei Project Manager o chi ha voluto il progetto. Non deve essere una persona che non ha interessi particolari sul progetto in modo che può essere obiettivo. Può servire per contenere gli interessi e rimanere obiettivo;
+		\item \textit{Project Manager}: Ha la responsabilità sul completamento del progetto. Si concentra sulla fattibilità del piano. Negozia per ottenere business value e rispettare tutti i vincoli di tempo budget e risorse;
+		\item Un altro Project Manager: Può essere il rappresentante del committente, o anche uno completamente imparziale. Può servire per verificare il lavoro del project manager.
+		\item \textit{Consulente nella pianificazione (JPP)}: può essere utile se non conosciamo qualche metodo di lavoro, ad esempio scrum, e quindi può insegnarci il modo in cui ci dobbiamo comportare. A volte può essere un Project Manager Senior (un affiancamento);
+		\item \textit{Tecnografo}: qualcuno che mette in buona copia le informazioni sugli strumenti che utilizziamo. I tecnografi ultimamente stanno diventando i dev stessi. Deve essere una figura con conoscenze sia nel Project Management che negli strumenti software e di supporto (non solo tecnologici, anche lavagne etc.);
+		\item \textit{Core Project Team}: non necessariamente serve tutto il team. Ovvio che in team più piccoli (es: Scrum) è facile che partecipino tutti;
+		\item \textit{Client Representative}: Sarebbe opportuno che si fosse anche il cliente in alcune riunioni di pianificazione. Il team è cruciale perché possono aiutare a definire le attività e i tempi in modo più accurato;
+		\item \textit{Resource Manager}: ci aiuta a capire se le risorse possono essere ben allocate. Deve avere completa visione su tutti i progetti attivi e sulle effettive disponibilità nel tempo delle risorse che sono presenti all'interno dell'organizzazione;
+		\item \textit{Project Champion}: Non ne parla nessuno, ma gli americani ci tengono un sacco. PMBOK lo definisce in modo chiaro. Il project champion è una figura centrale e di potere che non è esattamente coinvolto nel progetto. Si tratta della persona da cui si "va a piangere" quando ci sono problemi seri. Serve una autorità in grado di nullificare i momenti di stallo. La situazione migliore è se il Project Champion è lato cliente. Questa figura non è facile da identificare;
+		\item \textit{Functional Managers}: Passiamo dal cosa al come. La figura che comincia a mettere le basi sulle tecnologie da utilizzare;
+		\item \textit{Process Owner}: Chi possiede i processi su cui bisogna lavorare, magari definendo workflow. Chi gestisce i processi che sono coinvolti nel progetto aiuta a capire cosa non funziona, cosa deve essere cambiato, etc.
+	\end{itemize}
+	\item \textbf{Facilities}: dove faccio la riunione. La scelta non è banale:
+	\begin{itemize}
+		\item la sede non dovrebbe cambiare per l'intera durata del progetto;
+		\item devono essere non solo confortevoli, ma anche lontane da fonti di interruzioni. Se si sceglie un open space è facile dar fastidio o essere infastiditi da altri;
+		\item conviene allestire una facility lontana da fonti di interruzioni;
+		\item può essere considerato l'utilizzo di "breakout rooms".
+	\end{itemize}
+	\item \textbf{Equipment}: quali dispositivi servono (proiettori, sedie, lavagne, flip charts etc.);
+	\item \textbf{Agenda}: cosa verrà discusso.
+	\item \textbf{Deliverables}: che risultati ci aspettiamo da ogni riunione.
+	\item \textbf{Project Proposal}: inizialmente sarà vuota, questa proposta verrà composta con l'avanzare delle riunioni.
+\end{itemize}
+\subsubsection{Agenda tipo (JPPS)}
+Uno schema tipo delle riunioni di pianificazione:
+\paragraph{Sessione 1}
+Le fasi sono divise in:
+\begin{enumerate}
+	\item \textbf{Fase di kick-off}: si ricorda perché e per cosa stiamo pianificando;
+	\begin{itemize}
+		\item Introduzione dello sponsor: chi ha voluto il progetto effettua una rapida presentazione;
+		\item Panoramica dello sponsor sul progetto, sulla sula importanza per l'azienda, la divisione ed il reparto;
+		\item Introduzione del co-project manager del committente(serve per mettere paletti, spiegare come effettuano di solito i progetti, etc.). Utile per capire il punto di vista per capire e prendere le misure per una migliore gestione;
+		\item Introduzione del co-project manager responsabile IT. Importante per pianificare il momento in cui bisogna interagire col cliente;
+		\item Introduzione del core project team;
+		\item Introduzione del tecnografo e del facilitatore (prendono il nome di planning facilation team);
+	\end{itemize}
+	\item \textbf{Working Session}: la fase in cui si lavora sulla effettiva pianificazione:
+	\begin{itemize}
+		\item Validazione e prioritizzazione dei requisiti: si iniziano a fare i conti con le risorse disponibili per verificare se tutto torna;
+		\item Panoramica sull'approccio che si vuole utilizzare per la pianificazione del progetto;
+		\item Generazione e validazione della WBS;
+		\item Stima della quantità di lavoro, durata e risorse richieste: non è necessario fornire troppe risorse ad attività non parallelizzabili o ad attività che possono avere durate lunghe;
+		\item Creazione del diagramma delle dipendenze;
+		\item Individuazione del percorso critico, delle date previste per il completamento del progetto e delle milestone;
+		\item Analisi della schedula e sua compressione (se necessaria);
+		\item Identificazione dei rischi e delle metodologie di mitigazione;
+		\item Ottenere il consenso di tutti i partecipanti sui contenuti del piano;
+		\item Aggiornamento della sessione.
+	\end{itemize}
+\end{enumerate}
+Sono coinvolti:
+\begin{itemize}
+	\item Project Manager;
+	\item Project Team;
+	\item Client (raccomandato);
+\end{itemize}
+Non è raro che però durante il kick-off partecipino tutti.
+
+\subsubsection{Scrivere un Project Description Statement (PDS)}
+Può avere la struttura simile al POS. Il problema è che al crescere del documento rintracciare le informazioni utili non è semplice. Il PDS può essere una collezione di documenti in cui ognuno ha uno scopo specifico, o semplicemente si può dividere in sezioni apposite:
+\begin{itemize}
+	\item Problem/Opportunity
+	\item Project Goal
+	\item Project Objectives
+	\item Success Criteria
+	\item Assumptions/Risks/Obstacles
+\end{itemize}
+Il PDS contiene una definizione del progetto più dettagliata destinata al team. Non è necessario che sia sintetico. Il suo utilizzo principale consiste nell'assicurarsi che il team abbia una visione comune del progetto.
+\subsection{Ruolo del committente nella JPPS}
+Possono esserci motivi per cui non si vuole avere contato col cliente, ad esempio non si vuole essere troppo trasparenti con le stime dei costi. Il cliente può essere di disturbo durante la fase di pianificazione. Non sempre però è una buona idea ignorarlo.
+
+\noindent Se il cliente viene interpellato può capire il valore del progetto e farsi un'idea più chiara e può fornire feedback utili.
+Il cliente può essere utile per:
+\begin{itemize}
+	\item \textbf{Validazione dei requisiti e POS};
+	\item \textbf{Prioritizzazione dei requisiti}: ora che sappiamo che i requisiti vanno bene possiamo spendere tempo per capire quali requisiti vengo prima degli altri. Può capitare che alcuni vengano proprio esclusi se non è possibile rispettare i costi. Si può utilizzare il metodo MoSCoW: Must, Should, Won't have.
+	\item \textbf{Generazione e validazione WBS}: Se il cliente approva il lavoro che abbiamo definito possiamo stare più tranquilli;
+	\item \textbf{Impegno di risorse da parte del committente}: per esempio è impossibile fissare delle date in cui effettuare operazioni in cui serve il cliente senza prima consultarlo;
+	\item \textbf{Accordo sulla pianificazione del progetto}: Avere un co-project manager lato cliente aiuta ad avere una doppia verifica di ciò che si sta creando. Non sempre apprezzato dai project manager ma molto utile;
+\end{itemize}
+Il committente deve avere "possesso" del piano (se ha partecipato a riunioni sa il motivo di molte decisioni che sono state prese) ed il suo coinvolgimento deve essere significativo.
+
+\paragraph{MoSCoW}
+Si tratta di un metodo per classificare i requisiti. Ogni requisiti può cadere in una di queste categorie:
+\begin{itemize}
+	\item \textbf{Must}: requisiti che devono essere assolutamente soddisfatti. Nessuno è sacrificabile. Ohana significa famiglia e famiglia vuol dire che nessuno viene abbandonato. Se questi requisiti non sono presenti a progetto concluso allora non possiamo dire che sia effettivamente terminato;
+	\item \textbf{Should}: requisiti che dovrebbero essere soddisfatti se è possibile in quanto molto utili. Corrispondono a requisiti abbastanza fondamentali ma sacrificabili nel caso in cui siano presenti requisiti alternativi;
+	\item \textbf{Could}: hanno un business value più limitato e quindi sono più sacrificabili degli Should. Sono considerati solo se il tempo e le risorse lo permettono;
+	\item \textbf{Would}: requisiti che sarebbero da includere, ma hanno un valore molto marginale e sono sempre rinviabili al futuro;
+\end{itemize}
+\begin{warn}
+	Potremmo sempre negoziare sul livello di qualità se non vogliamo rimuovere completamente un requisito per una questione di costi.
+\end{warn}
+\subsection{Costruire la Work Breakdown Structure (WBS)}
+Si tratta di una descrizione gerarchica, ad albero che può essere capita anche da un cliente che non ha conoscenze tecniche. 
+Serve a descrivere tutto il lavoro (insieme di attività) che deve essere eseguito nel progetto per poter soddisfare i bisogni del cliente.
+
+\noindent Esiste una relazione tra RBS e WBS, le attività servono ad implementare i requisiti. Potremmo dire che la WBS descrive come soddisfare RBS.\noindent 
+Può essere una buonissima idea generare la WBS a partire dall'RBS. Se lo facciamo sarà più facile valutare se sono stati perseguiti i \textit{criteri di successo}.\newline
+\noindent L'approccio che si utilizza in genere è il seguente: per ogni foglia dell'RBS (requisito più dettagliato) può essere suddiviso in attività che possono essere a loro volta suddivise in ulteriori sotto-attività. Attività troppo grandi sono dispersive e non è facile tracciare come sta andando l'attività. Diventa difficile stimare l'attività e la fase di monitor.\newline
+Esagerare nel suddividere le attività può comportare problemi di monitor ma anche un overhead in fase di pianificazione. Ancora una volta è una questione di trade-off. Può essere utile scendere nel dettaglio anche per chiarire aspetti implementativi, o per esprimere la dipendenza tra attività.
+
+\begin{info}[A cosa serve fare la WBS]
+	Ci permette di poter prendere decisioni di tipo tecnico. Può aiutare a capire che un requisito richiede più lavoro del previsto o che ci sono casi particolari che non sono stati presi in considerazione e quindi servono più test. Usare una certa tecnologia potrebbe non rendere possibile passi di integrazione, etc.
+\end{info}
+
+La WBS ha quattro impieghi:
+\begin{itemize}
+	\item \textbf{Thought Pprocess tool}: aiuta il team e il projetc manager a visualizzare esattamente come il lavoro è stato definito e come deve essere gestito;
+	\item \textbf{Architectural design tool}: permette di capire come le diverse attività sono correlate tra loro;
+	\item \textbf{Planning tool}: strumento di pianficazione per eccellenza. Al livello massimo di dettaglio si possono effettuare stime relative al lavoro da svolgere, alla durata, alle risorse necessarie;
+	\item \textbf{Project status reporting tool}: ci si può chiedere su cosa si sta lavorando e si capisce perfettamente se ci sono ritardi o problemi.
+\end{itemize}
+
+\subsubsection{Generare la WBS}
+Si può come già detto generare la WBS a partire dalla RBS, espandendola. La decomposizione del requisito in attività si ferma quando si raggiunge un adeguato livello di decomposizione.
+Molto importante il concetto di task. Serve definire un po' di nomenclatura anche se, a detta del professore, "è un gran casino" (termine tecnico).\newline
+\begin{warn}[Terminologia]
+	In italiano utilizziamo il termine "attività", mentre in inglese c'è il concetto di "activity" e di "task" che nell'inglese comune sono sinonimi, ma \textbf{di solito} nel mondo del project management viene utilizzato il temine "activity" per riferirsi alle macro-attività, mentre l'unica più piccola della activity, quella al massimo livello di dettaglio è il "task". Non tutti utilizzano questa terminologia, bisogna stare attenti a cosa si intende nel caso specifico. Nel nostro caso cercheremo di stare attenti ad utilizzare i termini nel modo appena definito.
+\end{warn}
+La conversione da RBS a WBS pu; essere eseguita in \st{due} tre modi:
+\begin{itemize}
+	\item Solo un architetto effettua la conversione. Questo causa problemi perché è un collo di bottiglia e non ha feedback da terzi. NON è una buona pratica.
+	\item \textbf{Team Approach}: tutto il team lavora assieme per definire l'intera WBS;
+	\item \textbf{Subteam Approach}: si suddivide il lavoro per cercare di ridurre ulteriormente il collo di bottiglia. In alcuni casi è abbastanza semplice, per esempio dove c'è una forte divisione (es: il caso di frontend-backend).
+\end{itemize}
+\begin{question}[Quanto deve essere grande il team?]
+	Dipende molto dal tipo di progetto. Team molto piccolo possono a vere modalità differenti di lavorare. Viene molto difficile per team molto piccoli utilizzare un approccio di tipo subteam.
+\end{question}
+\subsubsection{Aspetti operativi}
+La WBS si costruisce ne possono lavorare assieme in utilizzando lavagne, pennarelli, memo. In questo modo più persone possono lavorare in parallelo in modo efficace.
+Quando si costruisce la WBS è necessario tenere ben presente il POS e la RBS. Ogni volta che si ragiona sulle attività è necessario verificare se non siamo usciti dallo scope. In caso di incoerenze è necessario intervenire il prima possibile.\newline
+Il modello PMLC scelto influenza il "come" la WBS viene costruita.
+\begin{itemize}
+	\item Se si è scelto un modello \textbf{lineare} o \textbf{incrementale}, la WBS deve necessariamente essere completa;
+	\item La WBS può essere raffinata ad ogni iterazione nel caso di approcci \textbf{iterativi};
+	\item Nel caso di modelli PMLC più aggressivi a causa dell'incertezza sullo scope, la WBS deve essere aggiustata ad ogni iterazione.
+\end{itemize}
+\begin{warn}
+	In alcuni approcci Agile non si parla esplicitamente di WBS. Il perché e come si fa a svolgere pianificazione verrà spiegato più avanti.
+\end{warn}
+
+\subsubsection{Stabilire se una WBS è completa}
+Wysocki definisce sette punti per capire se una WBS è completa:
+\begin{itemize}
+	\item \textbf{Lo stato di completamento è misurabile}: se non sono in grado di capire lo stato di completamente dell'attività allora o non è scritta bene o deve essere decomposta meglio. La definizione del "done", ovvero capire come possiamo dire se una certa attività è completa oppure no (attraverso test, feedback etc.).
+	\item \textbf{Le attività sono ben delimitate}: a volte esistono attività che si concatenano e non si capisce bene quando iniziano, quando finiscono etc.;
+	\item \textbf{Le attività hanno associato un deliverable}: un esempio di deliverable può essere anche del codice di test che se eseguito non fallisce.
+	\item \textbf{Tempi e costi sono facilmente stimabili}: Se un'attività è troppo grossa può essere difficile effettuare stime. A volte può essere anche difficile effettuare stime per poca esperienza o conoscenza. In questi casi si può stare larghi o chiedere consiglio a chi è più esperto.
+	\item \textbf{La durata dell'attività è entro un limite accettabile}: alcune attività se tropo grosse sono difficile da monitorare e controllare.
+	\item \textbf{Un task deve essere considerato come un'attività che non richiede interruzioni per aspettare altri la fine di altri task}: in questo caso si suddivide ulteriormente;
+\end{itemize}
+
+Il settimo criterio è di natura diversa, e pertanto è separato dagli altri. Riguarda il giudizio del Project Manager su alcuni aspetti:
+\begin{itemize}
+	\item Il cliente non ha partecipato alla generazione della WBS quanto ci si aspetta;
+	\item Il project manager ha una sensazione di disagio (un brutto presentimento);
+	\item Il project manager ritiene che modifiche anche rilevanti dello scope possano avvenire con una certa probabilità.
+\end{itemize}
+Ci sono quindi casi in cui la WBS può risultare abbastanza instabile ed incompleta. Bisogna anche dire che però non sempre è possibile fare di meglio, ed è quindi possibile procedere comunque, consapevoli del fatto che possono essere possibili cambiamenti in qualsiasi momento.
+
+\begin{warn}
+	Ci sono situazioni in cui la WBS può essere considerata completa anche senza che tutti i criteri sono soddisfatti. Alcuni esempi, ma le situazioni sono tante:
+	\begin{itemize}
+		\item Il progetto è molto breve;
+		\item Attività molto difficilmente stimabili;
+		\item In presenza di attività soggette a rischi elevati;
+		\item Alta varianza della durata prevista;
+	\end{itemize}
+	Bisogna ancora una volta essere consapevoli delle scelte!
+\end{warn}
+\centeredImage{document/img/wbs.png}{RBS è un subset di WBS}{1}
+\subsubsection{Approcci di costruzione della WBS}
+\begin{itemize}
+	\item \textbf{Noun-type Appoaches}: ad esempio la suddivisione della WBS in componenti fisici o funzionali. Es: il deploy di un singolo componente è una attività;
+	\item \textbf{Verb-type Appoaches}: la WBS si basa più sulle attività o sugli obiettivi;
+	\item \textbf{Organizational approaches}: la divisione si basa su aspetti geografici, in base ai processi di business o le divisione in dipartimenti.
+\end{itemize}
+\subsubsection{Template}
+Molto probabilmente sono già disponibili in azienda template per le WBS in base alle esigenze dei clienti. Spesso i template sono costruiti sulla base di esperienze passate. Il beneficio maggiore è ovviamente che si risparmia un sacco di tempo utilizzandoli, ma insieme alle WBS ci sono anche dati storici che ci aiutano a stimare costi e durate. Grazie ai template è possibile migliorare la qualità dei processi. Si tratta di un processo iterativo in cui il template viene migliorato in base alle esperienze passate.
+
+\noindent I template vengono utilizzati maggiormente in progetti ricorrenti. Alcuni esempi:
+\begin{itemize}
+	\item Distribuire una nuova release di un software;
+	\item Installare una rete in un ufficio;
+	\item Aggiornare una applicazione;
+	\item etc.
+\end{itemize}
+\subsection{Stimare la durata delle attività (estimating task duration)}
+Quando si stima un'attività è una buona idea stimare sia la durata che la quantità di lavoro. Grazie alla durata si può capire se verranno raggiunte le milestone di progetto, mentre grazie ai costi si possono assegnare risorse.
+Ovviamente la durata di un task dipende dalla quantità di lavoro e dalle risorse. La stima di entrambi i parametri va svolta utilizzando la stessa metodologia. Esistono approcci che si basano più sulla stima di uno dei due parametri e deducono l'altro.
+\subsubsection{Durata di un task}
+La durata di un task può variare per diverse ragioni:
+\begin{itemize}
+	\item \textbf{Diversi livelli di inesperienza e competenza}: una persona esperta può badarci molto meno di una non esperta;
+	\item \textbf{Eventi inattesi}: di solito si cercano di mitigare attraverso l'analisi dei rischi;
+	\item \textbf{Uso non efficiente del tempo di lavoro}: bisogna mettere le persone nella condizione di non essere continuamente disturbate;
+	\item \textbf{Errori e fraintendimenti}: la gestione della comunicazione deve essere gestita in modo che non ci siano. Bisogna minimizzare le occasioni in cui si perde tempo per un fraintendimento, proprio perché è scarsamente prevedibile;
+	\item \textbf{Tutti i processi hanno una durata variabile per cause comuni};
+\end{itemize}
+
+\subsubsection{Metodi per stimare la durata di un Task}
+Esistono diversi metodi per stimare la durata di un task:
+\begin{itemize}
+	\item Estrapolazioni basate su attività simili di cui è nota la durata media;
+	\item Analisi di dati storici;
+	\item Utilizzo del giudizio di un esperto;
+	\item Applicazione di una tecnica "consensus-based" (ovvero non esiste una sola persona ad un alto livello gerarchico che sceglie, ma scelgono tutti):
+	\begin{itemize}
+		\item Delphi tecnique: il punto è rispondere all'esigenza di fare sintesi quando ci sono opinioni diverse e contrastanti. La prima consisteva nell'esporre l'attività e richiedere la stima ad ogni partecipante, che segna la sua stima su un foglietto insieme alle motivazioni, in modo anonimo. In seguito un facilitatore elencava le stime insieme alle motivazioni di ciascuno. I foglietti sono anonimi per evitare che le opinioni si polarizzino verso quello che è il desiderio di un superiore. A questo punto ci si può anche fermare e prendere una misura (media, moda, massimo, minimo), ma si perde l'occasione di capire le motivazioni e quindi magari di generare ripensamenti in altre persone. La proposta è di effettuare altri round per verificare se ci sono stati cambi di idee. Dopo qualche round di solito si tende a notare che si converge ad un range più ristretto di valori. Ci si può fermare coi round dopo un numero prefissato o solo una volta che si raggiunge una certa convergenza;
+		\item \textbf{Three-point tecnique};
+		\item \textbf{Wide-band Delphi tecnique};
+	\end{itemize}
+\end{itemize}
+Questi approcci possono essere utilizzati per stimare anche altre quantità, come effort, risorse umane etc.
+
+\paragraph{Altri esempi di tecniche "consensus-based"}
+Esistono altre tecniche che associano una "taglia" ad un task, ovvero un punteggio che può significare qualsiasi cosa (tempo richiesto, rischio, etc.)
+Il "planning poker" è un metodo in cui si sceglie una carta con una taglia tra una serie di taglie. Di solito la sequenza non è lineare. Una sequenza può essere ad esempio quella di Fibonacci (possono essere utilizzate anche cose strane come taglie delle maglie o dei cani). C'è molta discussione sul se questo metodo funzioni oppure no. C'è chi dice che funziona e chi dice che non porta ad alcun risultato effettivo, o a risultati imprecisi.
+
+\noindent Esistono metodi ancora diversi per misurare il carico di lavoro, ad esempio, Lines of Code, Function points, Feature points, Object points etc.
+
+\subsubsection{Le stime in SCRUM}
+In SCRUM i requisiti sono definiti in termini di user story. Le user story sono inserite in un product backlog. Nella fasi iniziali del progetto bisogna cercare di enumerarle tutte per precisare meglio le fasi del progetto. Può venire la tentazione di ignorarne alcune e pensare al primo spint, con l'idea che dato che l'approccio è iterativo si può posticipare. Difetto di questo approccio è che si scoprono dettagli troppo tardi e si rischia di finire nei guai. Inoltre non è possibile stimare nel modo corretto le scadenze. La stima di una user story avviene non in termini di giorni/uomo ma in termini di complessità generica, un po' come avviene col discorso delle taglie enunciato precedentemente. Questa unità di misura si chiama story point. Gli story points sono quindi adimensionali.
+\centeredImage{document/img/scrum\_method.png}{Metologia SCRUM}{0.7}
+\subsubsection{Unità di misura}
+Ricordiamo che anche le stime hanno un ciclo di vita, con l'esperienza si riusciranno sempre a fare stime migliori in futuro rispetto a quelle fatte oggi.
+\paragraph{Pomodoro Technique}
+L'idea di base interessante è quella di combinare il metodo di "gestione del tempo" con il metodo di "misura del tempo". L'idea viene dal timer classico da cucina a forma di pomodoro. Imposto 25 minuti di cottura (questa si chiama pomodoro session). In questi 25 minuti è vietata qualsiasi interruzione. Raggiunta la fine dei 25 minuti si può fare una pausa di 5 minuti in cui si può anche essere interrotti per altri motivi. La pausa può essere più lunga dopo un certo numero di blocchi o per altri svariati motivi.\newline
+Una volta preso il via, può essere ragionevole pensare di cominciare ad effettuare le stime di tempo in pomodori.
+\subsection{Stimare il fabbisogno di risorse (estimating resource requirements)}
+Le risorse che possono essere necessarie sono:
+\begin{itemize}
+	\item \textbf{Persone}: le figure che servono, il loro livello di esperienza, etc.;
+	\item \textbf{Facilities}: la lavagna, i pennarelli, le carte da poker etc.;
+	\item \textbf{Equipaggiamento}: macchine virtuali, spazi cloud, viste su database, etc.;
+	\item \textbf{Soldi}: in generale;
+	\item \textbf{Materiali}: nel nostro caso si sviluppa software, i materiali vengono un po' meno, ma basta pensare al caso dell'IoT.
+\end{itemize}
+\subsubsection{Assegnare membri dello staff alle attività}
+Quando si assegna un task al personale si devono considerare le caratteristiche del task, i rischi, il business value, le criticità e le skill necessarie. Inoltre si tende ad assegnare un task a chi ha già affrontato un problema simile con successo.
+
+\noindent È quindi necessario profilare il personale. Questo è utile perché può aiutarci anche a capire cosa manca al personale, in modo da poter ovviare ai buchi grazie a corsi specializzati etc. Un approccio efficace consiste nel sviluppare una matrice "skill-need" per le attività e una matrice "skill-inventory" per i membri dello staff.
+\centeredImage{document/img/assignstaff.png}{Staff Assignments}{1}
+
+\subsubsection{Resource Breakdown Structure}
+L'RBS (sì, l'acronimo è lo stesso) ci permette di decomporre e schematizzare le risorse necessarie.
+\centeredImage{document/img/resourcebreakdown.png}{Resource Breakdown Structure}{1}
+\paragraph{Suddivisione dell'organizzazione}
+Il problema principale ricade soprattutto sulla gestione del personale.
+\begin{itemize}
+	\item \textbf{Organizzazione funzionale}: In un approccio funzionale la divisione viene effettuata in base alle funzioni che vengono ricoperte.
+	\centeredImage{document/img/functional.png}{Organizzazione funzionale}{0.8}
+	\item \textbf{Organizzazione per progetti}: Il breakdown è per progetti dove per ogni progetto ho le figure chiave che mi servono per eseguirlo.
+	\centeredImage{document/img/projectorg.png}{Organizzazione per progetti}{0.8}
+	\item \textbf{Organizzazione a matrice}: Fornisce la maggior flessibilità. Ho una suddivisione funziona ed un project office. Il project office si occupa di allocare risorse degli altri reparti per i vari progetti.
+	\centeredImage{document/img/matrixorg.png}{Organizzazione a matrice}{0.8}
+\end{itemize}
+\begin{info}[Staffare:]
+	Con il termine "staffare" si indica la fase in cui si definisce qual è l'effettivo team che lavora sul progetto.
+\end{info}
+\subsection{Stimare i costi (estimating cost)}
+Una volta stimate le persone vanno stimati i costi. Una delle prime domande che porrà il cliente infatti sarà "Quanto mi verrà a costare?". È chiaro che inizialmente è impossibile determinare un effettivo prezzo, ma il cliente insisterà perché vuole avere il prima possibile le idee chiare sul se "ne vale davvero la pena". Inizialmente quindi si fornisce almeno un \textbf{ordine di grandezza}. Se il progetto è abbastanza ricorrente lo storico può fornirci un'indicazione sommaria. Anche fornire un ordine di grandezza può essere complicato e può aver senso chiedere consiglio ad una figura più preparata o un consulente esterno. A volte ci si può far retribuire anche solo la fase di scoping e planning.
+
+\noindent Una volta in pianificazione ed identificate le attività si possono suddividere i costi e assegnare un budget ad ogni attività (Cost Budgeting). A fine attività è necessario un resoconto per verificare se si è sforato il budget, se è andata bene o se c'è stato un qualche tipo di risparmio.
+
+\noindent Inoltre è necessario un processo che monitora i costi reali delle attività svolte, che venga eseguito ciclicamente a intervalli regolari, as esempio settimanalmente (Cost control) per verificare se le stime rispettano i costi effettivi. In caso negativo è necessario identificare il problema ed intraprendere azioni correttive. Questo aspetto sul monitor verrà spiegato anche successivamente.
+\subsection{Cash Flow}
+Fondamentale per la sostenibilità economica del progetto. Esistono aziende che hanno molta liquidità e non hanno bisogno di banche. Per aziende più piccole è necessario un buon piano per coprire tutti i costi necessari. Tra i costi di progetto ci sono anche le spese generali, come gli uffici, il riscaldamento, la luce etc.
+Anche queste spese in parte faranno parte delle spese di progetto. Un'osservazione è che alcune spese sono ricorrenti e seguono pattern particolari, ad esempio gli stipendi. Nella contrattazione bisogna contrattare sul quando ricevere pagamenti etc.
+Indipendentemente dalle periodicità, quando è il momento di effettuare un pagamento si deve avere la liquidità necessaria. Se non si dispone del denaro necessario si può ritardare il pagamento o richiedere un finanziamento. Ritardare un pagamento resta una violazione di un contratto sebbene spesso tollerata. Un finanziamento ha un suo costo che ricade sugli interessi e a volte non vengono proprio concessi (magari perché proprio la banca ritiene rischioso fornirci i soldi).
+
+\noindent Il flusso di cassa deve quindi essere gestito adeguatamente per non incappare in situazioni spiacevoli. Non si tratta di una getsione semplice, dal punto di vista amministrativo è un concetto utile per capire lo stato di salute di un'azienda.
+
+\noindent Il project Manager vede il flusso di cassa come un flusso monetario. Tende a semplificare il concetto piazzando soldi in un determinato orizzonte temporale in modo che sia facile calcolare entrate e uscite.
+
+\noindent Dal punto di vista dell'utile fornito da un progetto, è sufficiente calcolaare la differenza di entrate e uscite al termine del progetto.
+
+\noindent Durante la fase di pianificazione è quindi necessario stabilire come gestire il cash flow, definendo entrate, uscite, prevedendo importi e date per incassi e pagamenti. Quando vengono effettuate modifiche al calendario delle attività è necessario modificare anche il calendario del cash flow, essendo i due aspetti gestionali molto dipendenti uno dall'altro.
+
+Esistono condizione, ovvero momenti in cui è possibile richiedere un incasso, ad esempio:
+\begin{itemize}
+	\item \textbf{Anticipo}: alla firma del contratto si prevede il pagamento di una certa quota che dipende dalla grandezza del progetto;
+	\item \textbf{Rilascio}: al momento dell'accettazione di una "parte" del deliverable del progetto;
+	\item \textbf{Milestone}: al raggiungimento di un obiettivo di progetto intermedio;
+	\item \textbf{Saldo}: a chiusura del progetto.
+\end{itemize}
+\centeredImage{document/img/cashflow.png}{Esempio di Cash Flow}{0.7}
+Si può rappresentare il cash flow su diversi tipi di grafici ovviamente.
+\subsection{Pianificazione e Contratto}
+La pianificazione deve tener conto di come è stato redatto il contratto. Ne esistono diverse tipologie:
+\begin{itemize}
+	\item \textbf{Contratto a corpo (fixed-price)}: Il prezzo che il cliente pagherà a progetto ultimato è pre-concordato e non considera i costi reali. Questa tipologia di contratto viene anche chiamata "a pacchetto" o "chiavi in mano".
+	\item \textbf{Contratto a consumo (time and materials)}: Prevede di pagare periodicamente per il lavoro svolto. Si può richiedere un preventivo ma non necessariamente il prezzo concordato sarà quello reale. Questa tipologia di contratto viene anche chiamata "a consuntivo" o "a misura".
+\end{itemize}
+Questi due tipi di contratti possono essere viste come due visioni opposte del rapporto tra fornitore e committente. Esistono anche personalizzazioni in cui si esegue un mix delle due tipologie di contratti o altro ancora.
+
+\noindent Chiaramente il contratto a corpo espone i formitori a rischi elevati e pertanto è necessaria una fase di planning molto scrupolosa. Il rischio principale è che il costo è sottostimato.
+\subsection{Costruire il project network diagram}
+Un Project Network Diagram determina il calendario (schedula) delle attività. Da questo diagramma si deriverò anche il Gantt Chart. Le frecce rappresentano le dipendenze tra le attività. Il Gantt non è altro che un modo grafico per visualizzare tutte le attività del progetto in un determinato istante temporale.
+\centeredImage{document/img/pnd.png}{Da Project Network Diagram a Gantt}{0.7}
+\subsubsection{Network based scheduling}
+\paragraph{Task On Arrow}
+Per rappresentare il grafo delle attività è possibile rappresentare gli archi come attività e i nodi come punti di sincronizzazione. In generale questo approccio non è molto apprezzato.
+\centeredImage{document/img/nbs.png}{Network base scheduling - Task On Arrow}{0.4}
+\paragraph{Task On Node}
+Molto più intuitivo rappresentare le attività sui nodi. Le frecce in questo caso rappresentano dipendenze.
+\centeredImage{document/img/nodepns.png}{Network base scheduling - Task on Node}{0.5}
+
+Il nodo fornisce alcune informazioni utili per il calcolo del calendario:
+\begin{itemize}
+	\item \textbf{ID}: Task ID;
+	\item \textbf{E}: Expected Duration (durata stimata);
+	\item \textbf{ES}: Earliest Start (il primo tempo utile per iniziare il task);
+	\item \textbf{LS}: Latest Start (l'ultimo tempo utile per iniziare il task);
+	\item \textbf{EF}: Earliest Finish (il primo tempo utile per finire il task);
+	\item \textbf{LF}: Latest Finish (l'ultimo tempo utile per finire il task);
+	\item \textbf{Slack}: Il ritardo massimo che non causa un ritardo nel completamento del progetto.
+\end{itemize}
+\centeredImage{document/img/tasknode.png}{Nodo Task}{0.3}
+A partire sono da \textbf{E} e dalle dipendenze è possibile calcolare tutti i valori \textbf{ES},\textbf{LS}, \textbf{EF} e \textbf{LF}.
+
+Anche le dipendenze hanno determinati tipi di relazioni:
+\begin{itemize}
+	\item \textbf{Finish-to-Start (FS)}: rappresenta la classica dipendenza. Devo prima finire un'attività A per iniziare un'altra B.
+	\item \textbf{Finish-to-Finish (FF)}: Un'attività B non può finire prima che non lo sia anche A
+	\item \textbf{Start-to-Start (SS)}: Un'attività B non può iniziare prima che non lo sia anche A
+	\item \textbf{Start-to-Finish (SF)}: Un'attività B non può finire prima che un'attività A non sia partita.
+\end{itemize}
+
+Le relazioni di dipendenza possono prevedere anche dei ritardi prestabiliti. In questo caso si parla di Lag.
+
+\subsubsection{Dipendenze}
+Le dipendenze tra attività possono essere di diverso tipo:
+\begin{itemize}
+	\item \textbf{Technical constraints}:
+	\begin{itemize}
+		\item \textbf{Discretionary constraints}: aggiunti per ridurre i rischi:
+		\item \textbf{Logical constraints}: per imporre una sequenza specifica di tasks;
+		\item \textbf{Best practice constraints}: basati su passate esperienze;
+		\item \textbf{Unique requirements constraints}: risorse singole per più tasks;
+	\end{itemize}
+	\item \textbf{Management contraints}: per comprimere la schedula;
+	\item \textbf{Inter-project constraints}: attesa di risultati da un altro progetto;
+	\item \textbf{Date constraints}:
+	\begin{itemize}
+		\item No earlier than;
+		\item No later than;
+		\item On this date;
+	\end{itemize}
+	\item \textbf{Lag Variables}: ritardi e attese tra i tasks.
+\end{itemize}
+\subsubsection{Guida pratica su come costuire un Initial Dependecy Diagram}
+\begin{enumerate}
+	\item Per ogni task, scrivere sul Post-It il suo ID, il nome e la durata.
+	\item Posizionare il Post-It sulla parte destra della lavagna (whiteboard).
+	\item Posizionare lo start node sulla parte sinistra della lavagna.
+	\item Muovere tutti i task senza un predecessore sulla parte sinistra della
+	lavagna e collegarli allo start node.
+	\item Muovere a sinistra tutti i task che si trovano sulla parte destra, ma che
+	hanno tutti i predecessori già sulla sinistra e collegali con una singola
+	linea ai predecessori.
+	\item Ripetere il passo 5 finché tutti i task sono stati spostati a sinistra.
+\end{enumerate}
+\centeredImage{document/img/pndexample.png}{Early e Late Schedule}{0.6}
+\paragraph{Critical Path}
+Le attività che hanno slack 0 son le più pericolose ed identificano il critical path. Se tardo in quelle attività in automatico sposto la scadenza.
+\paragraph{Slack}
+Lo slack può anche essere chiamato float. Esistono più tipi di slack:
+\begin{itemize}
+	\item \textbf{Total slack}: ritardo che può subire un task senza avere un impatto sull'early schedule del progetto.
+	\item \textbf{Free slack}: ritardo che può subire un task senza avere un impatto sull'early schedule del task successivo.
+\end{itemize}
+\centeredImage{document/img/critical.png}{Critical Path}{0.6}
+
+\paragraph{Compressione della schedula}
+La schedula può essere compressa applicando una delle seguenti azioni:
+\begin{itemize}
+	\item Sostituzione delle dipendenze FS con dipendenze SS;
+	\item Sostituzione di un membro del team con uno con più esperienza;
+	\item Aggiungere risorse o spostarle nel critical path, che siano da task non contenuti nel critical path o da altri progetti.
+\end{itemize}
+Si tratta di un processo iterativo, in cui il percorso critico potrebbe cambiare più volte e sono necessari aggiustamenti continui finché non si arriva alla situazione desiderata.
+
+\noindent La compressione della schedula non è MAI gratis. Necessariamente se stiamo cambiando qualcosa e stiamo guadagnando tempo stiamo perdendo un'altra risorsa. Comprimere la schedula non riduce il quantitativo di lavoro, anzi può aumentarlo insieme ai rischi e alla complessità.
+
+\paragraph{Gestione di una riserva}
+Lo scopo è prevenire ritardi. Non bisogna mai gonfiare la durata di un task. Il motivo è che si dilata tutto il calendario, e quindi anche il prezzo e potrebbe non portare ad una situazione di competitività coi miei avversari. L'ideale è prevedere una riserva pari ad una certa percentuale della durata complessiva del progetto (5\% o 10\%). Questo permette di creare un'attività dummy da inserire come ultima attività di progetto. Questa prende il nome di Scope Bank. Quando ci bado di più vado ad attingere dall'attività, quando mi avanza del tempo la vado ad arricchire.
+
+\centeredImage{document/img/wbstable.png}{WBS con definizione predecessori}{0.7}
+\centeredImage{document/img/network.png}{Network Diagram}{0.8}
+\centeredImage{document/img/wbsresource.png}{WBS con date e risorse allocate}{0.7}
+\centeredImage{document/img/gantt.png}{Diagramma di Gantt estratto}{0.7}
+\subsection{Scrivere una proposta di progetto efficace}
+Una proposta di progetto efficace deve contenere:
+\begin{itemize}
+	\item \textbf{Executive Summary}: Una sintesi del piano di progetto;
+	\item \textbf{Background}: Ci ricorda perché abbiamo fatto il piano, a quali obiettivi e requisiti andiamo incontro;
+	\item \textbf{Obiettivi};
+	\item \textbf{Overview dell'approccio che verrà intrapreso}: Una descrizione di come si lavora, quante iterazioni verranno fatte, etc.;
+	\item \textbf{Detailed statement of work};
+	\item \textbf{Riassunto di tempi, costi e risorse};
+	\item \textbf{Appendici}: Tutti i documenti di dettaglio;
+\end{itemize}
+\subsection{Ottenere l’approvazione per passare alla fase di esecuzione (launch/execution)}
+L'approvazione può essere negate nel caso in cui:
+\begin{itemize}
+	\item I costi/benefici non sono ritenuti sufficienti;
+	\item I rischi di fallimento sono troppo alti;
+	\item I costi totali previsti per il progetto sono superiori ai fondi disponibili (il cash flow non ci permette di autofinanziarci);
+	\item Ci sono altri progetti che competono per ottenere le stesse risorse;
+\end{itemize}
+
+\newpage
