@@ -290,10 +290,195 @@ Il "planning poker" è un metodo in cui si sceglie una carta con una taglia tra 
 
 \noindent Esistono metodi ancora diversi per misurare il carico di lavoro, ad esempio, Lines of Code, Function points, Feature points, Object points etc.
 
+\subsubsection{Le stime in SCRUM}
+In SCRUM i requisiti sono definiti in termini di user story. Le user story sono inserite in un product backlog. Nella fasi iniziali del progetto bisogna cercare di enumerarle tutte per precisare meglio le fasi del progetto. Può venire la tentazione di ignorarne alcune e pensare al primo spint, con l'idea che dato che l'approccio è iterativo si può posticipare. Difetto di questo approccio è che si scoprono dettagli troppo tardi e si rischia di finire nei guai. Inoltre non è possibile stimare nel modo corretto le scadenze. La stima di una user story avviene non in termini di giorni/uomo ma in termini di complessità generica, un po' come avviene col discorso delle taglie enunciato precedentemente. Questa unità di misura si chiama story point. Gli story points sono quindi adimensionali.
+\centeredImage{document/img/scrum\_method.png}{Metologia SCRUM}{0.7}
+\subsubsection{Unità di misura}
+Ricordiamo che anche le stime hanno un ciclo di vita, con l'esperienza si riusciranno sempre a fare stime migliori in futuro rispetto a quelle fatte oggi.
+\paragraph{Pomodoro Technique}
+L'idea di base interessante è quella di combinare il metodo di "gestione del tempo" con il metodo di "misura del tempo". L'idea viene dal timer classico da cucina a forma di pomodoro. Imposto 25 minuti di cottura (questa si chiama pomodoro session). In questi 25 minuti è vietata qualsiasi interruzione. Raggiunta la fine dei 25 minuti si può fare una pausa di 5 minuti in cui si può anche essere interrotti per altri motivi. La pausa può essere più lunga dopo un certo numero di blocchi o per altri svariati motivi.\newline
+Una volta preso il via, può essere ragionevole pensare di cominciare ad effettuare le stime di tempo in pomodori.
 \subsection{Stimare il fabbisogno di risorse (estimating resource requirements)}
+Le risorse che possono essere necessarie sono:
+\begin{itemize}
+	\item \textbf{Persone}: le figure che servono, il loro livello di esperienza, etc.;
+	\item \textbf{Facilities}: la lavagna, i pennarelli, le carte da poker etc.;
+	\item \textbf{Equipaggiamento}: macchine virtuali, spazi cloud, viste su database, etc.;
+	\item \textbf{Soldi}: in generale;
+	\item \textbf{Materiali}: nel nostro caso si sviluppa software, i materiali vengono un po' meno, ma basta pensare al caso dell'IoT.
+\end{itemize}
+\subsubsection{Assegnare membri dello staff alle attività}
+Quando si assegna un task al personale si devono considerare le caratteristiche del task, i rischi, il business value, le criticità e le skill necessarie. Inoltre si tende ad assegnare un task a chi ha già affrontato un problema simile con successo.
+
+\noindent È quindi necessario profilare il personale. Questo è utile perché può aiutarci anche a capire cosa manca al personale, in modo da poter ovviare ai buchi grazie a corsi specializzati etc. Un approccio efficace consiste nel sviluppare una matrice "skill-need" per le attività e una matrice "skill-inventory" per i membri dello staff.
+\centeredImage{document/img/assignstaff.png}{Staff Assignments}{1}
+
+\subsubsection{Resource Breakdown Structure}
+L'RBS (sì, l'acronimo è lo stesso) ci permette di decomporre e schematizzare le risorse necessarie.
+\centeredImage{document/img/resourcebreakdown.png}{Resource Breakdown Structure}{1}
+\paragraph{Suddivisione dell'organizzazione}
+Il problema principale ricade soprattutto sulla gestione del personale.
+\begin{itemize}
+	\item \textbf{Organizzazione funzionale}: In un approccio funzionale la divisione viene effettuata in base alle funzioni che vengono ricoperte.
+	\centeredImage{document/img/functional.png}{Organizzazione funzionale}{0.8}
+	\item \textbf{Organizzazione per progetti}: Il breakdown è per progetti dove per ogni progetto ho le figure chiave che mi servono per eseguirlo.
+	\centeredImage{document/img/projectorg.png}{Organizzazione per progetti}{0.8}
+	\item \textbf{Organizzazione a matrice}: Fornisce la maggior flessibilità. Ho una suddivisione funziona ed un project office. Il project office si occupa di allocare risorse degli altri reparti per i vari progetti.
+	\centeredImage{document/img/matrixorg.png}{Organizzazione a matrice}{0.8}
+\end{itemize}
+\begin{info}[Staffare:]
+	Con il termine "staffare" si indica la fase in cui si definisce qual è l'effettivo team che lavora sul progetto.
+\end{info}
 \subsection{Stimare i costi (estimating cost)}
+Una volta stimate le persone vanno stimati i costi. Una delle prime domande che porrà il cliente infatti sarà "Quanto mi verrà a costare?". È chiaro che inizialmente è impossibile determinare un effettivo prezzo, ma il cliente insisterà perché vuole avere il prima possibile le idee chiare sul se "ne vale davvero la pena". Inizialmente quindi si fornisce almeno un \textbf{ordine di grandezza}. Se il progetto è abbastanza ricorrente lo storico può fornirci un'indicazione sommaria. Anche fornire un ordine di grandezza può essere complicato e può aver senso chiedere consiglio ad una figura più preparata o un consulente esterno. A volte ci si può far retribuire anche solo la fase di scoping e planning.
+
+\noindent Una volta in pianificazione ed identificate le attività si possono suddividere i costi e assegnare un budget ad ogni attività (Cost Budgeting). A fine attività è necessario un resoconto per verificare se si è sforato il budget, se è andata bene o se c'è stato un qualche tipo di risparmio.
+
+\noindent Inoltre è necessario un processo che monitora i costi reali delle attività svolte, che venga eseguito ciclicamente a intervalli regolari, as esempio settimanalmente (Cost control) per verificare se le stime rispettano i costi effettivi. In caso negativo è necessario identificare il problema ed intraprendere azioni correttive. Questo aspetto sul monitor verrà spiegato anche successivamente.
+\subsection{Cash Flow}
+Fondamentale per la sostenibilità economica del progetto. Esistono aziende che hanno molta liquidità e non hanno bisogno di banche. Per aziende più piccole è necessario un buon piano per coprire tutti i costi necessari. Tra i costi di progetto ci sono anche le spese generali, come gli uffici, il riscaldamento, la luce etc.
+Anche queste spese in parte faranno parte delle spese di progetto. Un'osservazione è che alcune spese sono ricorrenti e seguono pattern particolari, ad esempio gli stipendi. Nella contrattazione bisogna contrattare sul quando ricevere pagamenti etc.
+Indipendentemente dalle periodicità, quando è il momento di effettuare un pagamento si deve avere la liquidità necessaria. Se non si dispone del denaro necessario si può ritardare il pagamento o richiedere un finanziamento. Ritardare un pagamento resta una violazione di un contratto sebbene spesso tollerata. Un finanziamento ha un suo costo che ricade sugli interessi e a volte non vengono proprio concessi (magari perché proprio la banca ritiene rischioso fornirci i soldi).
+
+\noindent Il flusso di cassa deve quindi essere gestito adeguatamente per non incappare in situazioni spiacevoli. Non si tratta di una getsione semplice, dal punto di vista amministrativo è un concetto utile per capire lo stato di salute di un'azienda.
+
+\noindent Il project Manager vede il flusso di cassa come un flusso monetario. Tende a semplificare il concetto piazzando soldi in un determinato orizzonte temporale in modo che sia facile calcolare entrate e uscite.
+
+\noindent Dal punto di vista dell'utile fornito da un progetto, è sufficiente calcolaare la differenza di entrate e uscite al termine del progetto.
+
+\noindent Durante la fase di pianificazione è quindi necessario stabilire come gestire il cash flow, definendo entrate, uscite, prevedendo importi e date per incassi e pagamenti. Quando vengono effettuate modifiche al calendario delle attività è necessario modificare anche il calendario del cash flow, essendo i due aspetti gestionali molto dipendenti uno dall'altro.
+
+Esistono condizione, ovvero momenti in cui è possibile richiedere un incasso, ad esempio:
+\begin{itemize}
+	\item \textbf{Anticipo}: alla firma del contratto si prevede il pagamento di una certa quota che dipende dalla grandezza del progetto;
+	\item \textbf{Rilascio}: al momento dell'accettazione di una "parte" del deliverable del progetto;
+	\item \textbf{Milestone}: al raggiungimento di un obiettivo di progetto intermedio;
+	\item \textbf{Saldo}: a chiusura del progetto.
+\end{itemize}
+\centeredImage{document/img/cashflow.png}{Esempio di Cash Flow}{0.7}
+Si può rappresentare il cash flow su diversi tipi di grafici ovviamente.
+\subsection{Pianificazione e Contratto}
+La pianificazione deve tener conto di come è stato redatto il contratto. Ne esistono diverse tipologie:
+\begin{itemize}
+	\item \textbf{Contratto a corpo (fixed-price)}: Il prezzo che il cliente pagherà a progetto ultimato è pre-concordato e non considera i costi reali. Questa tipologia di contratto viene anche chiamata "a pacchetto" o "chiavi in mano".
+	\item \textbf{Contratto a consumo (time and materials)}: Prevede di pagare periodicamente per il lavoro svolto. Si può richiedere un preventivo ma non necessariamente il prezzo concordato sarà quello reale. Questa tipologia di contratto viene anche chiamata "a consuntivo" o "a misura".
+\end{itemize}
+Questi due tipi di contratti possono essere viste come due visioni opposte del rapporto tra fornitore e committente. Esistono anche personalizzazioni in cui si esegue un mix delle due tipologie di contratti o altro ancora.
+
+\noindent Chiaramente il contratto a corpo espone i formitori a rischi elevati e pertanto è necessaria una fase di planning molto scrupolosa. Il rischio principale è che il costo è sottostimato.
 \subsection{Costruire il project network diagram}
+Un Project Network Diagram determina il calendario (schedula) delle attività. Da questo diagramma si deriverò anche il Gantt Chart. Le frecce rappresentano le dipendenze tra le attività. Il Gantt non è altro che un modo grafico per visualizzare tutte le attività del progetto in un determinato istante temporale.
+\centeredImage{document/img/pnd.png}{Da Project Network Diagram a Gantt}{0.7}
+\subsubsection{Network based scheduling}
+\paragraph{Task On Arrow}
+Per rappresentare il grafo delle attività è possibile rappresentare gli archi come attività e i nodi come punti di sincronizzazione. In generale questo approccio non è molto apprezzato.
+\centeredImage{document/img/nbs.png}{Network base scheduling - Task On Arrow}{0.4}
+\paragraph{Task On Node}
+Molto più intuitivo rappresentare le attività sui nodi. Le frecce in questo caso rappresentano dipendenze.
+\centeredImage{document/img/nodepns.png}{Network base scheduling - Task on Node}{0.5}
+
+Il nodo fornisce alcune informazioni utili per il calcolo del calendario:
+\begin{itemize}
+	\item \textbf{ID}: Task ID;
+	\item \textbf{E}: Expected Duration (durata stimata);
+	\item \textbf{ES}: Earliest Start (il primo tempo utile per iniziare il task);
+	\item \textbf{LS}: Latest Start (l'ultimo tempo utile per iniziare il task);
+	\item \textbf{EF}: Earliest Finish (il primo tempo utile per finire il task);
+	\item \textbf{LF}: Latest Finish (l'ultimo tempo utile per finire il task);
+	\item \textbf{Slack}: Il ritardo massimo che non causa un ritardo nel completamento del progetto.
+\end{itemize}
+\centeredImage{document/img/tasknode.png}{Nodo Task}{0.3}
+A partire sono da \textbf{E} e dalle dipendenze è possibile calcolare tutti i valori \textbf{ES},\textbf{LS}, \textbf{EF} e \textbf{LF}.
+
+Anche le dipendenze hanno determinati tipi di relazioni:
+\begin{itemize}
+	\item \textbf{Finish-to-Start (FS)}: rappresenta la classica dipendenza. Devo prima finire un'attività A per iniziare un'altra B.
+	\item \textbf{Finish-to-Finish (FF)}: Un'attività B non può finire prima che non lo sia anche A
+	\item \textbf{Start-to-Start (SS)}: Un'attività B non può iniziare prima che non lo sia anche A
+	\item \textbf{Start-to-Finish (SF)}: Un'attività B non può finire prima che un'attività A non sia partita.
+\end{itemize}
+
+Le relazioni di dipendenza possono prevedere anche dei ritardi prestabiliti. In questo caso si parla di Lag.
+
+\subsubsection{Dipendenze}
+Le dipendenze tra attività possono essere di diverso tipo:
+\begin{itemize}
+	\item \textbf{Technical constraints}:
+	\begin{itemize}
+		\item \textbf{Discretionary constraints}: aggiunti per ridurre i rischi:
+		\item \textbf{Logical constraints}: per imporre una sequenza specifica di tasks;
+		\item \textbf{Best practice constraints}: basati su passate esperienze;
+		\item \textbf{Unique requirements constraints}: risorse singole per più tasks;
+	\end{itemize}
+	\item \textbf{Management contraints}: per comprimere la schedula;
+	\item \textbf{Inter-project constraints}: attesa di risultati da un altro progetto;
+	\item \textbf{Date constraints}:
+	\begin{itemize}
+		\item No earlier than;
+		\item No later than;
+		\item On this date;
+	\end{itemize}
+	\item \textbf{Lag Variables}: ritardi e attese tra i tasks.
+\end{itemize}
+\subsubsection{Guida pratica su come costuire un Initial Dependecy Diagram}
+\begin{enumerate}
+	\item Per ogni task, scrivere sul Post-It il suo ID, il nome e la durata.
+	\item Posizionare il Post-It sulla parte destra della lavagna (whiteboard).
+	\item Posizionare lo start node sulla parte sinistra della lavagna.
+	\item Muovere tutti i task senza un predecessore sulla parte sinistra della
+	lavagna e collegarli allo start node.
+	\item Muovere a sinistra tutti i task che si trovano sulla parte destra, ma che
+	hanno tutti i predecessori già sulla sinistra e collegali con una singola
+	linea ai predecessori.
+	\item Ripetere il passo 5 finché tutti i task sono stati spostati a sinistra.
+\end{enumerate}
+\centeredImage{document/img/pndexample.png}{Early e Late Schedule}{0.6}
+\paragraph{Critical Path}
+Le attività che hanno slack 0 son le più pericolose ed identificano il critical path. Se tardo in quelle attività in automatico sposto la scadenza.
+\paragraph{Slack}
+Lo slack può anche essere chiamato float. Esistono più tipi di slack:
+\begin{itemize}
+	\item \textbf{Total slack}: ritardo che può subire un task senza avere un impatto sull'early schedule del progetto.
+	\item \textbf{Free slack}: ritardo che può subire un task senza avere un impatto sull'early schedule del task successivo.
+\end{itemize}
+\centeredImage{document/img/critical.png}{Critical Path}{0.6}
+
+\paragraph{Compressione della schedula}
+La schedula può essere compressa applicando una delle seguenti azioni:
+\begin{itemize}
+	\item Sostituzione delle dipendenze FS con dipendenze SS;
+	\item Sostituzione di un membro del team con uno con più esperienza;
+	\item Aggiungere risorse o spostarle nel critical path, che siano da task non contenuti nel critical path o da altri progetti.
+\end{itemize}
+Si tratta di un processo iterativo, in cui il percorso critico potrebbe cambiare più volte e sono necessari aggiustamenti continui finché non si arriva alla situazione desiderata.
+
+\noindent La compressione della schedula non è MAI gratis. Necessariamente se stiamo cambiando qualcosa e stiamo guadagnando tempo stiamo perdendo un'altra risorsa. Comprimere la schedula non riduce il quantitativo di lavoro, anzi può aumentarlo insieme ai rischi e alla complessità.
+
+\paragraph{Gestione di una riserva}
+Lo scopo è prevenire ritardi. Non bisogna mai gonfiare la durata di un task. Il motivo è che si dilata tutto il calendario, e quindi anche il prezzo e potrebbe non portare ad una situazione di competitività coi miei avversari. L'ideale è prevedere una riserva pari ad una certa percentuale della durata complessiva del progetto (5\% o 10\%). Questo permette di creare un'attività dummy da inserire come ultima attività di progetto. Questa prende il nome di Scope Bank. Quando ci bado di più vado ad attingere dall'attività, quando mi avanza del tempo la vado ad arricchire.
+
+\centeredImage{document/img/wbstable.png}{WBS con definizione predecessori}{0.7}
+\centeredImage{document/img/network.png}{Network Diagram}{0.8}
+\centeredImage{document/img/wbsresource.png}{WBS con date e risorse allocate}{0.7}
+\centeredImage{document/img/gantt.png}{Diagramma di Gantt estratto}{0.7}
 \subsection{Scrivere una proposta di progetto efficace}
+Una proposta di progetto efficace deve contenere:
+\begin{itemize}
+	\item \textbf{Executive Summary}: Una sintesi del piano di progetto;
+	\item \textbf{Background}: Ci ricorda perché abbiamo fatto il piano, a quali obiettivi e requisiti andiamo incontro;
+	\item \textbf{Obiettivi};
+	\item \textbf{Overview dell'approccio che verrà intrapreso}: Una descrizione di come si lavora, quante iterazioni verranno fatte, etc.;
+	\item \textbf{Detailed statement of work};
+	\item \textbf{Riassunto di tempi, costi e risorse};
+	\item \textbf{Appendici}: Tutti i documenti di dettaglio;
+\end{itemize}
 \subsection{Ottenere l’approvazione per passare alla fase di esecuzione (launch/execution)}
+L'approvazione può essere negate nel caso in cui:
+\begin{itemize}
+	\item I costi/benefici non sono ritenuti sufficienti;
+	\item I rischi di fallimento sono troppo alti;
+	\item I costi totali previsti per il progetto sono superiori ai fondi disponibili (il cash flow non ci permette di autofinanziarci);
+	\item Ci sono altri progetti che competono per ottenere le stesse risorse;
+\end{itemize}
 
 \newpage
