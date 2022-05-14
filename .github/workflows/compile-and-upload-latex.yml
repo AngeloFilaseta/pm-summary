@@ -21,3 +21,4 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: layangelo-latex.pdf
+          token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
