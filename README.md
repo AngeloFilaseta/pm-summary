@@ -1,15 +1,15 @@
 # pm-summary
-Summary for the Project Management Couse (2021/2022).  
+Summary for the Project Management Couse (2021/2022).
 Based on the slides owned by the professor [Marco Antonio Boschetti](https://www.unibo.it/sitoweb/marco.boschetti/didattica).
-## License 
+## License
 This template originates from [LaTeXTemplates](http://www.LaTeXTemplates.com)
 #### Started from:
-__Lachaise Assignment__  
+__Lachaise Assignment__
 Original Authors:
 
 - Marion Lachaise
 - François Févotte
-  
+
 Vel (vel@LaTeXTemplates.com)
 
 Changes from the original template are listed in the ```layout.tex``` file.
