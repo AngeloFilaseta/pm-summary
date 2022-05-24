@@ -310,13 +310,118 @@ Le tre tipologie base di riunioni sono:
 \paragraph{Team War Room}
 Potrebbe aver senso avere delle stanze fatte apposta per i team per prendere decisioni. La “War Room” è uno spazio dedicato alle riunioni necessarie durante il progetto. La stanza deve fornire tutte le facilities necessarie.
 \subsection{Gestione dei cambiamenti di scope}
+\centeredImage{document/img/scopechange.png}{Processo tipico per la gestione del cambiamento di Scope}{0.6}
+In un qualsiasi momento un qualsiasi stakeholder può chiedere di apportare cambiamenti. Bisogna a questo punto capire la richiesta, la quale deve essere compresa. Esistono template per accettare la proposta di cambiamento, in modo da rendere più semplice formalizzare la richiesta di cambiamento e avere a disposizione tutte le informazioni necessarie. Se nonostante i template la richiesta non è ancora chiara può esserci una retroazione in cui viene richiesta una spiegazione migliore.
+\centeredImage{document/img/scopechangeform.png}{Esempio di form per le richieste di cambiamento dello scope}{0.5}
+Una volta capita la richiesta è possibile:
+\begin{enumerate}
+	\item rigettarla (non significa necessariamente non parlarne mai più);
+	\item ritenere che possa aver senso, ma che non impatta a sufficienza sul business value;
+	\item passare alla fase successiva, facendo uno studio sull'impatto;
+\end{enumerate}
+Da una parte c'è l'impatto in termini di valore restituito, dall'altra quanto alti sono i costi, quanto tempo servirà per implementare il cambiamento. Si effettua poi una fase di review dell'impatto. Anche in questo caso si parla con le figure che riguardano il cambiamento dello scope.
+\begin{info}
+	Se per esempio il cambiamento dello scope riguarda solo l'architettura interna del sistema il cliente può anche non essere coinvolto nella fase di review. In questo caso basta contattare anche solo il senior manager dell'azienda.\newline
+	\noindent Se invece l'impatto è sul cliente bisogna spiegare le ragioni e quali implicazioni ha il cambiamento di scope. Inoltre va messo al corrente che il cambio di scope ha un costo.
+\end{info}
+Il cambio dello scope implica anche un cambio nei piani e nella schedula del progetto. Potrebbero servire del tempo e delle risorse in più. Il progetto intero può subire ritardi, oppure è possibile sfruttare gli slack per cercare di mitigarlo. In pratica è necessario un vero e proprio processo di scoping all'interno della fase di esecuzione, in modo da poter avere un nuovo piano che sarà poi possibile seguire.
 
+\subsubsection{Project Impact Statement}
+Documento preparato dal project manager, con la collaborazione del team, per definire l’impatto del cambiamento di scope sul progetto.
+Deve rispondere alle seguenti domande:
+\begin{itemize}
+	\item \textbf{Qual è il beneficio atteso dal cambiamento?}: ossia, qual è il business value;
+	\item \textbf{Come impatterà il cambiamento sui costi?}: l'impatto può essere anche nullo, magari togliendo qualcosa e aggiungendo una tecnologia che ha pressoché lo stesso costo. In alcuni casi il costo potrebbe addirittura diminuire;
+	\item \textbf{Come impatterà il cambiamento sulla schedula del progetto?}: l'introduzione del cambiamento ha un impatto forte sulla deadline del progetto?;
+	\item \textbf{Come impatterà il cambiamento sulla qualità della soluzione?}: molti cambiamenti sono molto vicini a delle patch piuttosto che a veri e proprio cambiamenti. Questo può essere dovuto anche all'inesperienza che ha portato a non identificare nel modo scorretto lo scope nelle fasi iniziali del progetto. In questi casi il cambiamento spesso viene accolto "per forza", ma bisogna stare attenti perché la stabilità della soluzione potrebbe risentirne pesantemente;
+	\item \textbf{Come impatterà il cambiamento sull’allocazione delle risorse?}: ad esempio la rimozione di una certa tecnologia può implicare che non si ha più bisogno di una certa figura all'interno del progetto, magari proprio l'esperto della tecnologia in questione;
+	\item \textbf{Il cambiamento può essere rimandato a un successivo stadio di progetto o a una prossima versione della soluzione?}: il cambiamento dello scope può portare ad ulteriori cambiamenti e a problemi di integrazione;
+	\item \textbf{Il progetto è in uno stato in cui è alto il rischio che il cambiamento richiesto destabilizzi la soluzione?}: quando vengono inseriti nuovi elementi all'interno del progetto bisogna valutare attentamente l'impatto del rischio.
+\end{itemize}
+La definizione dell’impatto del cambiamento può avere i seguenti esiti:
+\begin{itemize}
+	\item \textbf{Il cambiamento può essere applicato entro le risorse e i tempi previsti per il progetto}: l'unico problema da risolvere in questo caso è stata rendere compatibile il cambiamento con gli obiettivi di progetto. Se il cambiamento è utile, ha un enorme valore, ma non è compatibile con gli obiettivi in generale si potrebbe pensare che gli obiettivi sono stati valutati male e quindi vanno cambiati. Partire convinti di sapere tutto e scoprire che il cliente ha una nuova richiesta è normale;
+	\item \textbf{Il cambiamento può essere applicato, ma richiederà un’estensione della schedula}: il cliente deve fornire l'ok per il tempo in più che serve;
+	\item \textbf{Il cambiamento può essere applicato entro la schedula prevista, ma sono richieste ulteriori risorse}: bisogna verificare se nello staff sono disponibili le risorse necessarie per riuscire a finire comunque in tempo;
+	\item \textbf{Il cambiamento può essere applicato, ma sono richieste ulteriori risorse e un’estensione della schedula}: è il caso in cui convergono gli ultimi due punti sopra citati;
+	\item \textbf{Il cambiamento può essere applicato utilizzando una strategia “multiple release”, stabilendo le priorità dei deliverables e le date di rilascio}: è possibile suddividere le consegne del progetto, consegnando versioni del software con i cambiamenti desiderati in futuro;
+	\item \textbf{Il cambiamento non può essere applicato senza modifiche sostanziali del progetto}.
+\end{itemize}
+
+\subsubsection{Aiutare il cliente a capire il cambiamento di Scope}
+Il cliente potrebbe spesso pensare che un cambiamento possa risultare facile e poco costoso, quando in pratica questo può richiedere cambiamenti notevoli nel progetto.\newline
+\noindent Il cambiamento può essere dovuto a cambiamenti esterni (del mercato, delle tecnologie, etc.) oppure alla scoperta di nuovi bisogni/requisiti durante il progetto, che non erano emersi nella fase di scoping.
+Le richieste di cambiamento dello scope devono essere sempre messe in conto. Il processo di cambiamento dello scope dovrebbe sempre essere definito preventivamente. Il team di progetto guidato dal project manager analizzerà l’impatto della richiesta di cambiamento sull’intero progetto.\newline
+Il cliente dovrebbe sempre essere messo al corrente del cambiamento che c'è stato, a meno che non sia possibile sistemare la schedula in modo che il cambiamento risulti trasparente dal suo punto di vista (vale ovviamente anche per i costi).\newline
+\noindent Il project impact statement definirà tutte le possibili alternative per soddisfare la richiesta di cambiamento. Assieme al committente si sceglierà una delle alternative individuate nel project impact statement. Infine il project manager ristrutturerà il piano del progetto in conseguenza della scelta effettuata e informerà il committente.
+\subsubsection{Gestione di una riserva}
+Una percentuale della durata del progetto (tipicamente del 5-10\%) è “accantonata” come tempo aggiuntivo per far fronte alle contingenze (time contingency) relative all’elaborazione e all’eventuale conseguente accoglimento delle richieste di cambiamento dello scope.\newline
+\noindent Le richieste di cambiamento possono essere processate ogni volta che emergono oppure ad ogni “ciclo” del progetto. La gestione della riserva può essere aiutata dall’utilizzo di una sorta di “Scope Bank” per “depositare” i requisiti (funzioni, feature, etc.) non ancora integrati nella soluzione, a cui si può assegnare anche una priorità.
+La situazione ideale sarebbe indovinare i costi del progetto, determinare un margine, ed essere molto bravi a rimanere nei costi iniziali senza la necessità di dover attingere dal margine.
 \subsection{Gestione delle comunicazioni}
+Per gestire le comunicazioni bisogna definire:
+\begin{itemize}
+	\item \textbf{Il “timing”}: quando comunichiamo;
+	\item \textbf{I contenuti}: di cosa parliamo. In alcune comunicazioni ricorrenti spesso basta solo fornire dei valori (ad esempio ogni mese bisogna comunicare delle spese ad un ufficio);
+	\item \textbf{Scegliere i canali che consentono un’efficiente comunicazione}: ogni metodo di comunicazione ha i suoi pro e i suoi contro. Ci sono situazioni in cui è meglio prediligere certi canali rispetto ad altri.
+\end{itemize}
+Ricordiamo che il processo delle comunicazioni parte con la generazione dell'idea, che viene poi codificata in un qualche modo. Il messaggio viene trasmesso attraverso il canale scelto. Ci aspettiamo che il ricevente decodifichi il messaggio. Il ricevente infine fornisce un feedback.
+\centeredImage{document/img/comproc.png}{Processo di comunicazione}{0.6}
 
-\subsection{Assegnamento delle risorse}
+\subsubsection{Classificazione delle comunicazioni}
+\paragraph{One-to-one}
+\begin{itemize}
+	\item Conversazioni (di persona e al telefono);
+	\item Riunioni;
+\end{itemize}
+\paragraph{Elettronica}
+\begin{itemize}
+	\item E-mails;
+	\item Websites;
+	\item Databases;
+\end{itemize}
+\paragraph{Scritta}
+\begin{itemize}
+	\item Memos;
+	\item Lettere;
+	\item Documenti;
+	\item Reports;
+\end{itemize}
+Il problema principale è cercare di catalogare tutte le informazioni in modo che siano rintracciabili, in modo da capire lo stato corrente di una determinata situazione in un tempo accettabile.
 
-\subsection{Resource-leveling strategies}
+\subsection{Gestione ed assegnamento delle risorse}
+Nella realtà di tutti i giorni, le risorse disponibili possono anche essere impiegate in altri progetti, pertanto è facile che qualche risorsa soffra della cosiddetta “over-allocation”.
+Spesso per esempio non tutto il personale è disponibile per tutta la durata del progetto (ferie, malattia, etc.).
+Il project manager cerca sempre di sistemare le risorse e la schedula per minimizzare ritardi e costi aggiuntivi.
+Per gestire al meglio le risorse disponibili, quando si presentano delle criticità si possono:
+\begin{itemize}
+	\item \textbf{Utilizzare gli “slack” disponibili};
+	\item \textbf{Far slittare la data di fine del progetto};
+	\item \textbf{Ricorrere allo straordinario}: comunque problematico perché la produttività non resta costante, va retribuito e spesso non è comunque sufficiente per risolvere situazioni critiche.
+\end{itemize}
 
-\subsection{Finalizzare la schedula del progetto}
+\subsection{Metodi alternativi per schedulare i task}
+Per semplificare il problema dell’assegnamento delle risorse si può ricorrere a metodi alternativi per pianificare i task. Tra le possibili azioni possiamo citare le seguenti:
+\begin{itemize}
+	\item \textbf{I task possono essere decomposti ulteriormente};
+	\item \textbf{Allungare la durata dei task (nota bene: solo la durata)}: può essere utile per avere flessibilità nella gestione delle risorse. Se l'effort rimane uguale non stiamo aumentando i costi, stiamo solo aumentando il tempo che abbiamo. Nella schedula finale vedo una diminuzione di slack, che può essere un contro ma anche un pro perché scelgo meglio come utilizzare i "tempi morti";
+	\item \textbf{Assegnare delle altre risorse in sostituzione di quelle non disponibili o non sufficientemente disponibili}.
+\end{itemize}
 
 \subsection{Scrivere i work packages}
+Un work package è una breve descrizione che specifica come i task che lo compongono saranno completati. I task inclusi in un work package dovrebbero avere delle relazioni tra loro che ne motivano una gestione coordinata (i motivi possono essere variegati). Spesso i task scelti vengono legati insieme per fare in modo di avere un sistema di reporting che li riguardano, in modo da avere per loro un occhio di riguardo (anche attraverso KPI).
+\begin{itemize}
+	\item Permettono di aver maggior controllo sul progetto e il rispetto della schedula.
+	\item Povrebbero essere scritti per:
+	\begin{itemize}
+		\item I task nel critical path;
+		\item I task ad alto rischio;
+		\item I task che richiedono risorse che sono scarse;
+		\item I task che hanno un’elevata varianza nella durata;
+		\item I task che riguardano il raggiungimento di una milestone (uno degli usi più frequenti);
+		\item Sostituire delle risorse assegnate ai task.
+	\end{itemize}
+\end{itemize}
+Un'idea per la gestione dei work package può essere assegnare loro un nome ed un responsabile.
+\centeredImage{document/img/workpackagesheet.png}{Work Package Assignment Sheet}{0.5}
+Ogni Work Package possiede quindi una lista di task e tutte le caratteristiche che lo distinguono (ID, nome, responsabile etc.).
