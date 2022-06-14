@@ -25,7 +25,7 @@ Le lavagne appese ad una parete con gli sticky notes appesi in giro sono ancora 
 \paragraph{Pennarelli}
 Le lavagne e i pennarelli vengono utilizzati per rappresentare dipendenze e ordini temporali tra le attività, e ci permettono di identificare il percorso critico.
 \centeredImage{document/img/marking.png}{Utilizzo dei pennarelli}{0.5}
-Esistono tanti tipi di lavagne, si pososno preparare in base a template etc.
+\noindent Esistono tanti tipi di lavagne, si pososno preparare in base a template etc.
 Le informazioni da tenere a portata di mano attaccati sulla lavagna ci sono il POS, la WBS, il diagramma delle dipendenze, project schedule, resource schedule, issue log (problemi che emergono durante il progetto) etc.
 \paragraph{Sticky Notes}
 Anche gli sticky notes sono uno strumento fondamentale, si pu; pensare di impiegare uno sticker note per inserire informazioni sulle user story. Vanno sintetizzate solo le informazioni fondamentali:
@@ -174,7 +174,7 @@ Esagerare nel suddividere le attività può comportare problemi di monitor ma an
 	Ci permette di poter prendere decisioni di tipo tecnico. Può aiutare a capire che un requisito richiede più lavoro del previsto o che ci sono casi particolari che non sono stati presi in considerazione e quindi servono più test. Usare una certa tecnologia potrebbe non rendere possibile passi di integrazione, etc.
 \end{info}
 
-La WBS ha quattro impieghi:
+\noindent La WBS ha quattro impieghi:
 \begin{itemize}
 	\item \textbf{Thought Pprocess tool}: aiuta il team e il projetc manager a visualizzare esattamente come il lavoro è stato definito e come deve essere gestito;
 	\item \textbf{Architectural design tool}: permette di capire come le diverse attività sono correlate tra loro;
@@ -184,11 +184,11 @@ La WBS ha quattro impieghi:
 
 \subsubsection{Generare la WBS}
 Si può come già detto generare la WBS a partire dalla RBS, espandendola. La decomposizione del requisito in attività si ferma quando si raggiunge un adeguato livello di decomposizione.
-Molto importante il concetto di task. Serve definire un po' di nomenclatura anche se, a detta del professore, "è un gran casino" (termine tecnico).\newline
+Molto importante il concetto di task. Serve definire un po' di nomenclatura anche se, a detta del professore, "è un gran casino" (termine tecnico).
 \begin{warn}[Terminologia]
 	In italiano utilizziamo il termine "attività", mentre in inglese c'è il concetto di "activity" e di "task" che nell'inglese comune sono sinonimi, ma \textbf{di solito} nel mondo del project management viene utilizzato il temine "activity" per riferirsi alle macro-attività, mentre l'unica più piccola della activity, quella al massimo livello di dettaglio è il "task". Non tutti utilizzano questa terminologia, bisogna stare attenti a cosa si intende nel caso specifico. Nel nostro caso cercheremo di stare attenti ad utilizzare i termini nel modo appena definito.
 \end{warn}
-La conversione da RBS a WBS pu; essere eseguita in \st{due} tre modi:
+La conversione da RBS a WBS può essere eseguita in \st{due} tre modi:
 \begin{itemize}
 	\item Solo un architetto effettua la conversione. Questo causa problemi perché è un collo di bottiglia e non ha feedback da terzi. NON è una buona pratica.
 	\item \textbf{Team Approach}: tutto il team lavora assieme per definire l'intera WBS;
@@ -221,7 +221,7 @@ Wysocki definisce sette punti per capire se una WBS è completa:
 	\item \textbf{Un task deve essere considerato come un'attività che non richiede interruzioni per aspettare altri la fine di altri task}: in questo caso si suddivide ulteriormente;
 \end{itemize}
 
-Il settimo criterio è di natura diversa, e pertanto è separato dagli altri. Riguarda il giudizio del Project Manager su alcuni aspetti:
+\noindent Il settimo criterio è di natura diversa, e pertanto è separato dagli altri. Riguarda il giudizio del Project Manager su alcuni aspetti:
 \begin{itemize}
 	\item Il cliente non ha partecipato alla generazione della WBS quanto ci si aspetta;
 	\item Il project manager ha una sensazione di disagio (un brutto presentimento);
@@ -292,7 +292,7 @@ Il "planning poker" è un metodo in cui si sceglie una carta con una taglia tra 
 
 \subsubsection{Le stime in SCRUM}
 In SCRUM i requisiti sono definiti in termini di user story. Le user story sono inserite in un product backlog. Nella fasi iniziali del progetto bisogna cercare di enumerarle tutte per precisare meglio le fasi del progetto. Può venire la tentazione di ignorarne alcune e pensare al primo spint, con l'idea che dato che l'approccio è iterativo si può posticipare. Difetto di questo approccio è che si scoprono dettagli troppo tardi e si rischia di finire nei guai. Inoltre non è possibile stimare nel modo corretto le scadenze. La stima di una user story avviene non in termini di giorni/uomo ma in termini di complessità generica, un po' come avviene col discorso delle taglie enunciato precedentemente. Questa unità di misura si chiama story point. Gli story points sono quindi adimensionali.
-\centeredImage{document/img/scrum\_method.png}{Metologia SCRUM}{0.7}
+\centeredImage{document/img/scrum\_method.png}{Metodologia SCRUM}{0.7}
 \subsubsection{Unità di misura}
 Ricordiamo che anche le stime hanno un ciclo di vita, con l'esperienza si riusciranno sempre a fare stime migliori in futuro rispetto a quelle fatte oggi.
 \paragraph{Pomodoro Technique}
@@ -315,7 +315,7 @@ Quando si assegna un task al personale si devono considerare le caratteristiche 
 
 \subsubsection{Resource Breakdown Structure}
 L'RBS (sì, l'acronimo è lo stesso) ci permette di decomporre e schematizzare le risorse necessarie.
-\centeredImage{document/img/resourcebreakdown.png}{Resource Breakdown Structure}{1}
+\centeredImage{document/img/resourcebreakdown.png}{Resource Breakdown Structure}{0.5}
 \paragraph{Suddivisione dell'organizzazione}
 Il problema principale ricade soprattutto sulla gestione del personale.
 \begin{itemize}
@@ -324,7 +324,7 @@ Il problema principale ricade soprattutto sulla gestione del personale.
 	\item \textbf{Organizzazione per progetti}: Il breakdown è per progetti dove per ogni progetto ho le figure chiave che mi servono per eseguirlo.
 	\centeredImage{document/img/projectorg.png}{Organizzazione per progetti}{0.8}
 	\item \textbf{Organizzazione a matrice}: Fornisce la maggior flessibilità. Ho una suddivisione funziona ed un project office. Il project office si occupa di allocare risorse degli altri reparti per i vari progetti.
-	\centeredImage{document/img/matrixorg.png}{Organizzazione a matrice}{0.8}
+	\centeredImage{document/img/matrixorg.png}{Organizzazione a matrice}{0.6}
 \end{itemize}
 \begin{info}[Staffare:]
 	Con il termine "staffare" si indica la fase in cui si definisce qual è l'effettivo team che lavora sul progetto.
@@ -340,15 +340,15 @@ Fondamentale per la sostenibilità economica del progetto. Esistono aziende che 
 Anche queste spese in parte faranno parte delle spese di progetto. Un'osservazione è che alcune spese sono ricorrenti e seguono pattern particolari, ad esempio gli stipendi. Nella contrattazione bisogna contrattare sul quando ricevere pagamenti etc.
 Indipendentemente dalle periodicità, quando è il momento di effettuare un pagamento si deve avere la liquidità necessaria. Se non si dispone del denaro necessario si può ritardare il pagamento o richiedere un finanziamento. Ritardare un pagamento resta una violazione di un contratto sebbene spesso tollerata. Un finanziamento ha un suo costo che ricade sugli interessi e a volte non vengono proprio concessi (magari perché proprio la banca ritiene rischioso fornirci i soldi).
 
-\noindent Il flusso di cassa deve quindi essere gestito adeguatamente per non incappare in situazioni spiacevoli. Non si tratta di una getsione semplice, dal punto di vista amministrativo è un concetto utile per capire lo stato di salute di un'azienda.
+\noindent Il flusso di cassa deve quindi essere gestito adeguatamente per non incappare in situazioni spiacevoli. Non si tratta di una gestione semplice, dal punto di vista amministrativo è un concetto utile per capire lo stato di salute di un'azienda.
 
 \noindent Il project Manager vede il flusso di cassa come un flusso monetario. Tende a semplificare il concetto piazzando soldi in un determinato orizzonte temporale in modo che sia facile calcolare entrate e uscite.
 
-\noindent Dal punto di vista dell'utile fornito da un progetto, è sufficiente calcolaare la differenza di entrate e uscite al termine del progetto.
+\noindent Dal punto di vista dell'utile fornito da un progetto, è sufficiente calcolare la differenza di entrate e uscite al termine del progetto.
 
 \noindent Durante la fase di pianificazione è quindi necessario stabilire come gestire il cash flow, definendo entrate, uscite, prevedendo importi e date per incassi e pagamenti. Quando vengono effettuate modifiche al calendario delle attività è necessario modificare anche il calendario del cash flow, essendo i due aspetti gestionali molto dipendenti uno dall'altro.
 
-Esistono condizione, ovvero momenti in cui è possibile richiedere un incasso, ad esempio:
+\noindent Esistono condizione, ovvero momenti in cui è possibile richiedere un incasso, ad esempio:
 \begin{itemize}
 	\item \textbf{Anticipo}: alla firma del contratto si prevede il pagamento di una certa quota che dipende dalla grandezza del progetto;
 	\item \textbf{Rilascio}: al momento dell'accettazione di una "parte" del deliverable del progetto;
@@ -365,7 +365,7 @@ La pianificazione deve tener conto di come è stato redatto il contratto. Ne esi
 \end{itemize}
 Questi due tipi di contratti possono essere viste come due visioni opposte del rapporto tra fornitore e committente. Esistono anche personalizzazioni in cui si esegue un mix delle due tipologie di contratti o altro ancora.
 
-\noindent Chiaramente il contratto a corpo espone i formitori a rischi elevati e pertanto è necessaria una fase di planning molto scrupolosa. Il rischio principale è che il costo è sottostimato.
+\noindent Chiaramente il contratto a corpo espone i fornitori a rischi elevati e pertanto è necessaria una fase di planning molto scrupolosa. Il rischio principale è che il costo è sottostimato.
 \subsection{Costruire il project network diagram}
 Un Project Network Diagram determina il calendario (schedula) delle attività. Da questo diagramma si deriverò anche il Gantt Chart. Le frecce rappresentano le dipendenze tra le attività. Il Gantt non è altro che un modo grafico per visualizzare tutte le attività del progetto in un determinato istante temporale.
 \centeredImage{document/img/pnd.png}{Da Project Network Diagram a Gantt}{0.7}
@@ -377,7 +377,7 @@ Per rappresentare il grafo delle attività è possibile rappresentare gli archi 
 Molto più intuitivo rappresentare le attività sui nodi. Le frecce in questo caso rappresentano dipendenze.
 \centeredImage{document/img/nodepns.png}{Network base scheduling - Task on Node}{0.5}
 
-Il nodo fornisce alcune informazioni utili per il calcolo del calendario:
+\noindent Il nodo fornisce alcune informazioni utili per il calcolo del calendario:
 \begin{itemize}
 	\item \textbf{ID}: Task ID;
 	\item \textbf{E}: Expected Duration (durata stimata);
@@ -390,7 +390,7 @@ Il nodo fornisce alcune informazioni utili per il calcolo del calendario:
 \centeredImage{document/img/tasknode.png}{Nodo Task}{0.3}
 A partire sono da \textbf{E} e dalle dipendenze è possibile calcolare tutti i valori \textbf{ES},\textbf{LS}, \textbf{EF} e \textbf{LF}.
 
-Anche le dipendenze hanno determinati tipi di relazioni:
+\noindent Anche le dipendenze hanno determinati tipi di relazioni:
 \begin{itemize}
 	\item \textbf{Finish-to-Start (FS)}: rappresenta la classica dipendenza. Devo prima finire un'attività A per iniziare un'altra B.
 	\item \textbf{Finish-to-Finish (FF)}: Un'attività B non può finire prima che non lo sia anche A
@@ -398,7 +398,7 @@ Anche le dipendenze hanno determinati tipi di relazioni:
 	\item \textbf{Start-to-Finish (SF)}: Un'attività B non può finire prima che un'attività A non sia partita.
 \end{itemize}
 
-Le relazioni di dipendenza possono prevedere anche dei ritardi prestabiliti. In questo caso si parla di Lag.
+\noindent Le relazioni di dipendenza possono prevedere anche dei ritardi prestabiliti. In questo caso si parla di Lag.
 
 \subsubsection{Dipendenze}
 Le dipendenze tra attività possono essere di diverso tipo:
