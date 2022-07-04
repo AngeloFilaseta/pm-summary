@@ -16,15 +16,15 @@ Per definire lo scope di progetto è possibile utilizzare tantissimi strumenti, 
 Il problema di base che bisogna risolvere è trovare il giusto equilibrio tra ciò di cui il cliente necessita e ciò che il cliente desidera. Perché non è una buona idea assecondare il cliente e dargli tutto ciò che desidera? Come mai dobbiamo fermarci e mettere dei paletti?\newline
 Il cliente a fine progetto potrebbe non rimanere soddisfatto, perché il desiderio potrebbe non portare a business value. Focalizzarsi troppo sui desideri porta a oscurare i bisogni e viceversa. In questa fase è anche possibile per dei consulenti aiutarci. Il cliente poi avrà delle aspettative. Bisogna assicurarsi che il cliente abbia capito cosa verrà fatto. Le aspettative devono essere allineate con ciò che pensiamo di fare. Il committente deve avere un ruolo attivo durante tutta la fase di scoping. Più coinvolgiamo il committente meglio è. Ogni volta che c'è un dubbio il committente va interpellato.
 \centeredImage{document/img/scopingmeeting.PNG}{Piano per redigere il POS secondo Wysocki}{0.5}
-Critichiamo insieme questa figura.
+\noindent Critichiamo insieme questa figura.
 \begin{itemize}
 	\item Conduciamo la Condition of Satisfaction, capiamo quali sono le condizioni per soddisfare il progetto;
 	\item Definiamo i requisiti;
-	\item Ci chiediamo se redigere il POS, in caso positivo lo sottoponiamo e basta. In caso negativo allora creaiamo la Requirements Breakdown Structure, verifichiamo la completezza dei requisiti, classifichiamo il progetto in base ai requisiti, determiniamo il miglior modello di gestione del progetto, scriviamo il POS e poi lo sottoponiamo.
+	\item Ci chiediamo se redigere il POS, in caso positivo lo sottoponiamo e basta. In caso negativo allora creiamo la Requirements Breakdown Structure, verifichiamo la completezza dei requisiti, classifichiamo il progetto in base ai requisiti, determiniamo il miglior modello di gestione del progetto, scriviamo il POS e poi lo sottoponiamo.
 \end{itemize}
 Cosa manca in questa figura? Il problema è che il processo è in realtà molto più complicato di come viene riportato in questa figura (molto lineare).
 \centeredImage{document/img/scopingpos.PNG}{Piano per redigere il POS}{0.5}
-Utilizzando questo approccio dividiamo in due macroprocessi:
+\noindent Utilizzando questo approccio dividiamo in due macroprocessi:
 \begin{itemize}
 	\item Nel primo cerchiamo di elencare i requisiti creando ed aggiornando l'RBS mano a mano che abbiamo nuove iterazioni.
 	\item Una volta capiti i requisiti possiamo capire qual è il modello migliore e più adatto per il progetto. Anche in questo caso però sono necessarie varie iterazioni.
@@ -156,7 +156,7 @@ Lo scopo è raccogliere tutti i requisiti (Requirements Gathering), partendo da 
 		\begin{itemize}
 			\item Possono essere generate idee più innovative;
 			\item Gli utenti riescono a chiarire meglio cosa vogliono;
-			\item gli utenti riescono meglio ad identificare requisiti dapprima ignorati;
+			\item Gli utenti riescono meglio ad identificare requisiti dapprima ignorati;
 			\item Il committente è centrale;
 			\item Rapida verifica sulla fattibilità, utile anche per fare prove di performance;
 			\item Stimola il processo mentale;
@@ -165,7 +165,7 @@ Lo scopo è raccogliere tutti i requisiti (Requirements Gathering), partendo da 
 		\begin{itemize}
 			\item Il cliente potrebbe voler l'implementazione del prototipo;
 			\item Risulta difficile decidere quando fermarsi;
-			\item Richiede skill specializzati;
+			\item Richiede skill;
 			\item Assenza completa di documentazione;
 		\end{itemize}
 	\end{info}
@@ -247,7 +247,7 @@ Quando si scrivono user story bisogna stare attenti a scriverle in modo che sian
 	\item \textbf{Testable}: già visto anche in RBS, se non è possibile effettuare test specifici per la singola user story probabilmente esistono dipendenze nascoste o che non sono state calcolate.
 \end{itemize}
 \paragraph{Role}
-Si tratta dell'utente che interagisce con sistema.
+Si tratta dell'utente che interagisce con il sistema.
 
 \noindent Importante da definire per l'assegnazione dei ruoli. L'identificazione dell'utente è importante per definire quali azioni sono possibili per ogni classe di utenti. Il team NON è mai il protagonista delle User Story. I protagonisti delle user story sono sempre gli user. Anche in questo caso esiste dibattito su questo punto. L'importante è chiarire come usare gli strumenti e non utilizzarli in maniera non ben definita.
 \paragraph{Actions}
@@ -258,9 +258,9 @@ L'azione del sistema che effettua l'utente.
 Non necessariamente una user story corrisponde ad un solo beneficio. magari ci sono pochi benefici condivisi da più user story, o poche suer story che condividono più benefici comuni. Il beneficio non è necessariamente immediato per l'utente, può esserlo anche per altri stakeholders.
 
 \paragraph{My little world}
-Un esempio di dibattito su user story, feature, epic etc. è dato dal modello "my little world" di Marcel Britsch. Può essere utile sviluppare il concetto di \textit{Tema(Theme)} da immaginare come un obiettivo, una delle feautre principali del sistema da sviluppare, suddivisibile in diverse epiche che sono a loro volta suddivisibili in user story. Possibile anche suddividere direttamente il tema direttamente in user story. Tutto questo ci porta ai requisiti.\newline
+Un esempio di dibattito su user story, feature, epic etc. è dato dal modello "my little world" di Marcel Britsch. Può essere utile sviluppare il concetto di \textit{Tema(Theme)} da immaginare come un obiettivo, una delle feature principali del sistema da sviluppare, suddivisibile in diverse epiche che sono a loro volta suddivisibili in user story. Possibile anche suddividere direttamente il tema direttamente in user story. Tutto questo ci porta ai requisiti.\newline
 \centeredImage{document/img/mylittleworld.png}{My Little World - Prima versione del modello}{0.35}
-\noindent Marcel però nel tempo ha cambiato idea sul modello. Per gestire realtà più complesse serve una struttura più complessa. Ora si parte dalle capabilities(funzionalità) del prodotto. Eventualmente è possibile definire dei temi (opzionalmente). Dato ciò che può fare il sistema si possono derivare delle features che eventualmente possono corrispondere a dei temi. La feature può essere implementata da una user story o ad un epic, che è a sua volta composta da user story. Il modello è fatto così perché è molto facile partire da cosa il sistema deve fare per poi arrivare a come suddividere su più livelli il lavoro.
+\noindent Marcel però nel tempo ha cambiato idea sul modello. Per gestire realtà più complesse serve una struttura più complessa. Ora si parte dalle capabilities (funzionalità) del prodotto. Eventualmente è possibile definire dei temi (opzionalmente). Dato ciò che può fare il sistema si possono derivare delle features che eventualmente possono corrispondere a dei temi. La feature può essere implementata da una user story o ad un epic, che è a sua volta composta da user story. Il modello è fatto così perché è molto facile partire da cosa il sistema deve fare per poi arrivare a come suddividere su più livelli il lavoro.
 \centeredImage{document/img/mylittleworld2.png}{My Little World - Versione aggiornata del modello}{0.75}
 
 \subsubsection{User Stories vs. Condition of Satisfaction}
@@ -419,7 +419,7 @@ Notare come ogni singola parte delle frasi è importante.
 	\end{info}
 	\item "Aggiornare il servizio del sistema clienti entro il 31 ottobre per raggiungere una media di tempo di attesa di non più di due minuti."
 		\begin{info}
-		Si evince che il sistema esiste già. Misurare in questo caso è più facile. Sistemi di questo tipo non sono semplici da calibrare e serve chiarire bene in che modo affrontare il problema in caso di picchi di chiamate. Come si può affrontare il problema? Ad esempio avvisando direttamente il cliente con un messaggio preconfigurato in cui si avverte che si cono problemi.
+		Si evince che il sistema esiste già. Misurare in questo caso è più facile. Sistemi di questo tipo non sono semplici da calibrare e serve chiarire bene in che modo affrontare il problema in caso di picchi di chiamate. Come si può affrontare il problema? Ad esempio avvisando direttamente il cliente con un messaggio preconfigurato in cui si avverte che ci sono problemi.
 	\end{info}
 \end{itemize}
 \noindent Non è necessario che stia davvero tutto in una paginetta, in progetti più complessi ne servono alcune. Gli elementi non inclusi nel POS perché troppo specifici e dettagiati devono essere inclusi nel Project Definition Statements (PDS). La lista di elementi che può essere inserita in questo documento è molto estesa. Ogni elemento raccolto in più è un buon input per le fasi successive. L'importante resta sempre il non perdere l'integrità concettuale.
@@ -432,7 +432,7 @@ Si possono includere alcuni allegati:
 
 \subsubsection{Alternative - Project Charter}
 PMBOK propone di utilizzare il Project Charter. Si tratta di un altro tipo per riassumere il POS ma ha una struttura leggermente diversa. Il documento autorizza formalmente l'esistenza del progetto. Una volta approvato il documento si può procedere col planning.
-Il Project Charter stabilisce cosa dovrà essere il progetto e tra le altre cose stabilisce la partnership tra chi svilupperò la soluzione e chi la richiede.
+Il Project Charter stabilisce cosa dovrà essere il progetto e tra le altre cose stabilisce la partnership tra chi svilupperà la soluzione e chi la richiede.
 Questo documento NON è un contratto, il contratto verrà stipulato in caso di progetto esterno ma si tratta di un documento diverso. Col Project Charter specifichiamo come l'organizzazione raggiungerà la soluzione. Il documento una volta che viene approvato definisce la soluzione, ogni volta che si cambia idea sulla soluzione bisogna tornare al processo di scoping, e quindi a modificare anche questo documento.
 Gli input potrebbero essere dei documenti che insieme compongono il Project Charter ed includono:
 \begin{itemize}
@@ -443,7 +443,7 @@ Gli input potrebbero essere dei documenti che insieme compongono il Project Char
 		\item \textbf{Product scope description}: La keyword Product potrebbe essere anche un servizio o qualsiasi altra cosa. Bisogna determinare le funzionalità e le caratteristiche del prodotto.
 		\item \textbf{Strategic plan}: un piano strategico relativo al progetto, ossia sul medio e lungo periodo e non solo sul breve (deve essere allineato al piano strategico aziendale). Anche chi non è ad un livello gerarchico alto deve capire bene la visione  aziendale in modo da poterla assecondare nel migliore dei modi.
 	\end{itemize}
-	\item \textbf{Business case}: fornisce tutte le informazioni necessarie per determinare se il progetto vale o meno l'investimento richiesto. Ci si può rifiutare di fare un progetto se non porta abbastanza benefici, puntando su altri progetti più proficui.Può essere creato utilizzando i seguenti elementi:
+	\item \textbf{Business case}: fornisce tutte le informazioni necessarie per determinare se il progetto vale o meno l'investimento richiesto. Ci si può rifiutare di fare un progetto se non porta abbastanza benefici, puntando su altri progetti più proficui. Può essere creato utilizzando i seguenti elementi:
 	\begin{itemize}
 		\item \textbf{bisogni di mercato}: il mercato in generale richiede determinate tecnologie, sostanzialmente a volte va "seguita la moda";
 		\item \textbf{bisogni dell'organizzazione}: a volte il progetto può portare benefici all'azienda;
